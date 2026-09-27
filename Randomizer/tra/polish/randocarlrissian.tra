@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     W tej rundzie wyrzuciłeś 1. Na podstawie rzutu towarzyszy
+             możesz z grubsza oszacować, ilu towarzyszy spotkasz, i
+             odpowiednio dostosować swój styl gry. W niektórych przypadkach
+             proces losowania może zająć sporo czasu. Proszę poczekać
+             do tego momentu. Późniejsza zmiana wyniku nie jest możliwa!
+             Naciśnij teraz klawisz ENTER, aby rozpocząć proces losowania.~
+@502 = ~2/6: 	     W swojej rozgrywce wyrzuciłeś 2. Na podstawie rzutu na towarzyszy
+             możesz z grubsza oszacować, ilu towarzyszy spotkasz, i
+             odpowiednio dostosować swój styl gry. W niektórych przypadkach
+             proces losowania może zająć sporo czasu. Proszę poczekać
+             do tego momentu. Późniejsza zmiana wyniku nie jest możliwa!
+             Naciśnij teraz ENTER, aby rozpocząć proces losowania.~
+@503 = ~3/6: 	     W tej rundzie wyrzuciłeś 3. Na podstawie rzutu towarzyszy
+	     możesz z grubsza oszacować, ilu towarzyszy spotkasz, i
+             odpowiednio dostosować swój styl gry. W niektórych przypadkach
+             proces losowania może zająć sporo czasu. Proszę poczekać
+             do końca. Późniejsza zmiana wyniku nie jest możliwa!
+             Naciśnij teraz klawisz ENTER, aby rozpocząć proces losowania.~
+@504 = ~4/6: 	     W tej rundzie wyrzuciłeś 4. Na podstawie rzutu towarzyszy
+             możesz z grubsza oszacować, ilu towarzyszy spotkasz, i
+             odpowiednio dostosować swój styl gry. W niektórych przypadkach
+             proces losowania może zająć sporo czasu. Proszę poczekać
+             do tego momentu. Późniejsza zmiana wyniku nie jest możliwa!
+             Naciśnij teraz klawisz ENTER, aby rozpocząć proces losowania.~
+@505 = ~5/6: 	     W tej rundzie wyrzuciłeś 5. Na podstawie rzutu towarzyszy
+             możesz z grubsza oszacować, ilu towarzyszy spotkasz, i
+             odpowiednio dostosować swój styl gry. W niektórych przypadkach
+             proces losowania może zająć sporo czasu. Proszę poczekać
+             do tego momentu. Późniejsza zmiana wyniku nie jest możliwa!
+             Naciśnij teraz ENTER, aby rozpocząć proces losowania.~
+@506 = ~6/6: 	     W tej rundzie wyrzuciłeś 6. Na podstawie rzutu towarzyszy
+	     możesz z grubsza oszacować, ilu towarzyszy spotkasz, i
+             odpowiednio dostosować swój styl gry. W niektórych przypadkach
+             proces losowania może zająć sporo czasu. Proszę poczekać
+             do końca. Późniejsza zmiana wyniku nie jest możliwa!
+             Naciśnij teraz klawisz ENTER, aby rozpocząć proces losowania.~
+@507 = ~7/6: 	     O, WOW! Wyrzuciłeś 7 na sześciościennej kostce. Jak to
+             możliwe?! Chyba użyłeś zwoju szczęścia... ;-)
+             Na podstawie rzutu towarzyszy możesz z grubsza oszacować, ilu
+             towarzyszy spotkasz, i odpowiednio dostosować swój styl gry.
+	     W niektórych przypadkach proces losowania może zająć sporo czasu.
+             Proszę poczekać. Późniejsza zmiana wyniku nie jest możliwa!
+             Naciśnij teraz klawisz ENTER, aby rozpocząć proces losowania.~

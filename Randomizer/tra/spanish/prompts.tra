@@ -1,0 +1,121 @@
+@-1000= "El mod %TP2_FILE_NAME% posee"
+
+@-1001= "varios componentes opcionales.
+Para ahorrar tiempo, puedes elegir globalmente qué hacer con ellos, en lugar de tener que responder por cada uno individualmente.
+"
+
+@-1002= "¿Qué hacer con todos los componentes que TODAVÍA NO están instalados?
+[I]Instalar, [S]Omitir, [A]Preguntar por cada uno? "
+
+@-1003= "¿Qué hacer con todos los componentes que YA están instalados?
+[R]Reinstalar, [U]Desinstalar, [S]Omitir, [A]Preguntar por cada uno? "
+
+@-1004= "Haz una copia de seguridad del archivo:"
+
+@-1005= "y busca ayuda en:"
+
+@-1006= "¿Instalar el componente ["
+
+@-1007= "] ?
+[R]Reinstalar, [N]No cambiar nada, [U]Desinstalar o [Q]Salir? "
+
+@-1008= "] ?
+[I]Instalar, [N]No instalar o [Q]Salir? "
+
+@-1009= "Introduce una parte del nombre del módulo: "
+
+@-1010= "Reinstalación del componente ["
+
+@-1011= "] "
+
+@-1012= "Reinstalación con el idioma"
+
+@-1013= "Eliminando primero la instalación antigua de ["
+
+@-1014= "] ..."
+
+@-1015= "INSTALACIÓN ANTIGUA ELIMINADA CORRECTAMENTE"
+
+@-1016= "Instalación"
+
+@-1017= "ERROR al instalar ["
+
+@-1018= "], regresando al estado anterior"
+
+@-1019= "INSTALADO CORRECTAMENTE "
+
+@-1020= "Omitido"
+
+@-1021= "Eliminando ["
+
+@-1022= "] (componente #"
+
+@-1023= ")"
+
+@-1024= "ELIMINADO CORRECTAMENTE ["
+
+@-1025= "] ?
+[R]Reinstalar, [N]No cambiar nada, [U]Desinstalar, [Q]Salir o elegir:"
+
+@-1026= "] ?
+[N]No, [Q]Salir o elegir:"
+
+@-1027= " (actualmente instalado="
+
+@-1028= "¿Quieres mostrar los componentes de ["
+
+@-1029= "] ?
+[Y]Sí, [N]No? "
+
+@-1030= "] ?
+elige:"
+
+@-1031= "] ?
+[R]Reinstalar, [N]No cambiar nada, [U]Desinstalar, [Q]Salir o elegir:"
+
+@-1032= "NO INSTALADO DEBIDO A ERRORES"
+
+@-1033= "INSTALADO CON ADVERTENCIAS "
+
+@-1034= "¿Quieres mostrar el archivo Readme? [Y]Sí [N]No"
+
+@-1035= "Uso del idioma"
+
+@-1036= "Grupo ["
+
+@-1037= "] omitido porque no se cumplen sus requisitos previos."
+
+@-1038= "[A]Preguntar por cada componente, [S]omitir todos o elegir una opción predefinida:"
+
+@-1039= "[A]Preguntar por cada componente, [R]reinstalar la configuración actual, [U]desinstalar todos, [S]omitir todos o elegir una opción predefinida:"
+
+@-1040= "
+Selecciona el idioma en el que quieres jugar.
+Si más adelante quieres jugar en otro idioma, tendrás que modificar el archivo weidu.conf y reinstalar tus mods.
+"
+
+@-1041= "Checo"
+@-1042= "Alemán"
+@-1043= "Inglés"
+@-1044= "Español"
+@-1045= "Francés"
+@-1046= "Italiano"
+@-1047= "Polaco"
+@-1048= "Portugués"
+@-1049= "Turco"
+@-1050= "Japonés"
+@-1051= "Coreano"
+@-1052= "Chino simplificado"
+@-1053= "Ruso"
+@-1054= "Ucraniano"
+
+@-1060= "
+Este juego está disponible en varios idiomas, pero WeiDU no sabe qué idioma del juego se utilizó al instalar este mod.
+
+Indica qué idioma del juego se utilizó al instalar este mod. Tu elección se utilizará hasta que salgas de WeiDU, pero no se guardará.
+"
+
+@-1061= "
+Uso de"
+
+@-1062= " y "

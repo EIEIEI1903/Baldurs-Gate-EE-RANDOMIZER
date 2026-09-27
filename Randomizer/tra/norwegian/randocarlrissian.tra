@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     Du har kastet en 1-er for gjennomføringen din. Ut fra et følgesvenn-kast
+             kan du omtrent vurdere hvor mange følgesvenner du vil møte, og
+             tilpasse spillestilen din deretter. Under visse omstendigheter kan
+             tilfeldighetsprosessen ta ganske lang tid. Vennligst vent
+             så lenge. Det er ikke mulig å endre resultatet i etterkant!
+             Trykk nå ENTER for å starte tilfeldighetsgenereringen.~
+@502 = ~2/6: 	     Du har kastet en 2-er for gjennomgangen din. Basert på et følgesvennkast
+             kan du anslå omtrent hvor mange følgesvenner du vil møte, og
+             tilpasse spillestilen din deretter. Under visse omstendigheter kan
+             tilfeldighetsgenereringen ta ganske lang tid. Vennligst vent
+             så lenge. Det er ikke mulig å endre resultatet i etterkant!
+             Trykk nå ENTER for å starte tilfeldighetsgenereringen.~
+@503 = ~3/6: 	     Du har kastet en 3-er for gjennomgangen din. Basert på et følgesvennkast
+	     kan du omtrent vurdere hvor mange følgesvenner du vil møte, og
+             tilpasse spillestilen din deretter. Under visse omstendigheter kan
+             tilfeldighetsprosessen ta ganske lang tid. Vennligst vent
+             så lenge. Det er ikke mulig å endre resultatet i etterkant!
+             Trykk nå ENTER for å starte tilfeldighetsprosessen.~
+@504 = ~4/6: 	     Du har kastet en 4-er for gjennomføringen din. Ut fra et følgesvenn-kast
+             kan du omtrent vurdere hvor mange følgesvenner du vil møte, og
+             tilpasse spillestilen din deretter. Under visse omstendigheter kan
+             tilfeldighetsprosessen ta ganske lang tid. Vennligst vent
+             så lenge. Det er ikke mulig å endre resultatet i etterkant!
+             Trykk nå ENTER for å starte tilfeldighetsgenereringen.~
+@505 = ~5/6: 	     Du har kastet en 5-er for gjennomføringen din. Basert på et følgesvennkast
+             kan du anslå omtrent hvor mange følgesvenner du vil møte, og
+             tilpasse spillestilen din deretter. Under visse omstendigheter kan
+             tilfeldighetsgenereringen ta ganske lang tid. Vennligst vent
+             så lenge. Det er ikke mulig å endre resultatet i etterkant!
+             Trykk nå ENTER for å starte tilfeldighetsgenereringen.~
+@506 = ~6/6: 	     Du har kastet en 6-er for gjennomføringen din. Basert på et følgesvennkast
+	     kan du omtrent vurdere hvor mange følgesvenner du vil møte, og
+             tilpasse spillestilen din deretter. Under visse omstendigheter kan
+             tilfeldighetsprosessen ta ganske lang tid. Vennligst vent
+             så lenge. Det er ikke mulig å endre resultatet i etterkant!
+             Trykk nå ENTER for å starte tilfeldighetsprosessen.~
+@507 = ~7/6: 	     Å, WOW! Du har kastet en 7 med en sekssidig terning. Hvordan kan
+             det ha seg?! Du har vel brukt en lykkerull... ;-)
+             Ved hjelp av et følgesvennkast kan du grovt anslå hvor mange
+             følgesvenner du vil møte, og tilpasse spillestilen din deretter.
+	     I noen tilfeller kan tilfeldighetsgenereringen ta ganske lang tid.
+             Vennligst vent så lenge. Det er ikke mulig å endre resultatet i etterkant!
+             Trykk nå ENTER for å starte tilfeldighetsgenereringen.~

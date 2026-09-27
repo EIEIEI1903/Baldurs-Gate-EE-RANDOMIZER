@@ -1,0 +1,121 @@
+@-1000= "Modifikasjonen %TP2_FILE_NAME% inneholder"
+
+@-1001= "flere valgfrie komponenter.
+For å spare tid kan du velge globalt hva som skal gjøres med dem, i stedet for å måtte svare for hver enkelt.
+"
+
+@-1002= "Hva skal gjøres med alle komponentene som IKKE er installert ennå?
+[I]Installer, [S]Hopp over, [A]Spør for hver enkelt? "
+
+@-1003= "Hva skal gjøres med alle komponentene som ALLEREDE er installert?
+[R]Installer på nytt, [U]Avinstaller, [S]Hopp over, [A]Spør for hver enkelt? "
+
+@-1004= "Vennligst sikkerhetskopier filen:"
+
+@-1005= "og søk hjelp på:"
+
+@-1006= "Installer komponenten ["
+
+@-1007= "] ?
+[R]Installer på nytt, [N]Ikke gjør noe, [U]Avinstaller eller [Q]Avslutt? "
+
+@-1008= "] ?
+[I]Installer, [N]Ikke installer eller [Q]Avslutt? "
+
+@-1009= "Skriv inn en del av modulnavnet: "
+
+@-1010= "Installerer komponenten ["
+
+@-1011= "] på nytt "
+
+@-1012= "Installerer på nytt med språket"
+
+@-1013= "Fjerner den gamle installasjonen av ["
+
+@-1014= "] først ..."
+
+@-1015= "GAMMEL INSTALLASJON BLE FJERNET"
+
+@-1016= "Installasjon"
+
+@-1017= "FEIL ved installasjon av ["
+
+@-1018= "], går tilbake til forrige tilstand"
+
+@-1019= "INSTALLERT "
+
+@-1020= "Hoppet over"
+
+@-1021= "Fjerner ["
+
+@-1022= "] (komponent #"
+
+@-1023= ")"
+
+@-1024= "FJERNET ["
+
+@-1025= "] ?
+[R]Installer på nytt, [N]Ikke gjør noe, [U]Avinstaller, [Q]Avslutt eller velg:"
+
+@-1026= "] ?
+[N]Nei, [Q]Avslutt eller velg:"
+
+@-1027= " (installert nå="
+
+@-1028= "Vil du vise komponentene i ["
+
+@-1029= "] ?
+[Y]Ja, [N]Nei? "
+
+@-1030= "] ?
+velg:"
+
+@-1031= "] ?
+[R]Installer på nytt, [N]Ikke gjør noe, [U]Avinstaller, [Q]Avslutt eller velg:"
+
+@-1032= "IKKE INSTALLERT PÅ GRUNN AV FEIL"
+
+@-1033= "INSTALLERT MED ADVARSLER "
+
+@-1034= "Vil du vise Readme-filen? [Y]Ja [N]Nei"
+
+@-1035= "Bruker språket"
+
+@-1036= "Gruppen ["
+
+@-1037= "] ble hoppet over fordi forutsetningene ikke er oppfylt."
+
+@-1038= "[A]Spør for hver komponent, [S]hopp over alle eller velg et forhåndsdefinert valg:"
+
+@-1039= "[A]Spør for hver komponent, [R]installer gjeldende konfigurasjon på nytt, [U]avinstaller alle, [S]hopp over alle eller velg et forhåndsdefinert valg:"
+
+@-1040= "
+Velg språket du ønsker å spille på.
+Hvis du senere vil spille på et annet språk, må du endre filen weidu.conf og installere modifikasjonene dine på nytt.
+"
+
+@-1041= "Tsjekkisk"
+@-1042= "Tysk"
+@-1043= "Engelsk"
+@-1044= "Spansk"
+@-1045= "Fransk"
+@-1046= "Italiensk"
+@-1047= "Polsk"
+@-1048= "Portugisisk"
+@-1049= "Tyrkisk"
+@-1050= "Japansk"
+@-1051= "Koreansk"
+@-1052= "Forenklet kinesisk"
+@-1053= "Russisk"
+@-1054= "Ukrainsk"
+
+@-1060= "
+Dette spillet er tilgjengelig på flere språk, men WeiDU vet ikke hvilket spillspråk som ble brukt ved installasjonen av denne modifikasjonen.
+
+Angi hvilket spillspråk som ble brukt ved installasjonen av denne modifikasjonen. Valget ditt vil bli brukt frem til WeiDU avsluttes, men vil ikke bli lagret.
+"
+
+@-1061= "
+Bruk av"
+
+@-1062= " og "

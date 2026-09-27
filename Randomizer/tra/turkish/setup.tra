@@ -1,0 +1,14 @@
+// UI und Interface (Hauptmenü)
+@100  = ~Ründomizer~
+@200  = ~Basic_Cast Ründomizer'ı Başlat~
+@300  = ~Advanced_Cast Ründomizer'ı Başlat~
+@400  = ~Base_Cast_Remover_Tool'u Başlat~
+
+// Error und Message Handling der Anwendung
+@101  = ~HATA - Oyun Baldurs_Gate_1_EE, SoD veya Baldurs_Gate_2_EE olmalıdır!~
+@102  = ~HATA: -SoD Merge Argent77 eksik- Yeslick kaldırılamadı. Varlığı devam edecek!~  
+@103  = ~Argent77 DLC Merger bulundu. Yama işlemi başlatılıyor...~
+@104  = ~HATA - En az 6 refakatçi modu yüklü olmalıdır! Önce NPC modlarını yükleyin. Bu bir tek kişilik mod değildir!~
+@105  = ~HATA - En az 3 refakatçi modu yüklü olmalıdır! Önce NPC modlarını yükleyin. Bu bir tek kişilik mod değildir!~
+@106  = ~HATA – Mod: «Mercenaries of the Sword Coast» algılandı! Bu mod rastgele olarak Randomizer ile uyumsuzdur, çünkü her ikisi de Baldur's Gate'in uzaysal olarak sınırlı evreni içinde farklı oyun tasarım kavramlarını izler.~
+

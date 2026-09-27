@@ -1,0 +1,50 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     Você rolou um 1 para a sua jogada. Com base no lançamento dos 
+	     companheiros,você pode estimar aproximadamente quantos companheiros 
+	     irá encontrar e ajustar sua estratégia de jogo de acordo com isso. 
+	     Em alguns casos, o processo de randomização pode demorar bastante. 
+	     Por favor, aguarde até que termine. Não é possível alterar seu resultado 
+	     posteriormente!
+             Agora, pressione ENTER para iniciar o processo de randomização.~
+@502 = ~2/6: 	     Você rolou um 2 para a sua jogada. Com base no lançamento dos 
+	     companheiros,você pode estimar aproximadamente quantos companheiros 
+	     irá encontrar e ajustar sua estratégia de jogo de acordo com isso. 
+	     Em alguns casos, o processo de randomização pode demorar bastante. 
+	     Por favor, aguarde até que termine. Não é possível alterar seu resultado 
+	     posteriormente!
+             Agora, pressione ENTER para iniciar o processo de randomização.~
+@503 = ~3/6: 	     Você rolou um 3 para a sua jogada. Com base no lançamento dos 
+	     companheiros,você pode estimar aproximadamente quantos companheiros 
+	     irá encontrar e ajustar sua estratégia de jogo de acordo com isso. 
+	     Em alguns casos, o processo de randomização pode demorar bastante. 
+	     Por favor, aguarde até que termine. Não é possível alterar seu resultado 
+	     posteriormente!
+             Agora, pressione ENTER para iniciar o processo de randomização.~
+@504 = ~4/6: 	     Você rolou um 4 para a sua jogada. Com base no lançamento dos 
+	     companheiros,você pode estimar aproximadamente quantos companheiros 
+	     irá encontrar e ajustar sua estratégia de jogo de acordo com isso. 
+	     Em alguns casos, o processo de randomização pode demorar bastante. 
+	     Por favor, aguarde até que termine. Não é possível alterar seu resultado 
+	     posteriormente!
+             Agora, pressione ENTER para iniciar o processo de randomização.~
+@505 = ~5/6: 	     Você rolou um 5 para a sua jogada. Com base no lançamento dos 
+	     companheiros,você pode estimar aproximadamente quantos companheiros 
+	     irá encontrar e ajustar sua estratégia de jogo de acordo com isso. 
+	     Em alguns casos, o processo de randomização pode demorar bastante. 
+	     Por favor, aguarde até que termine. Não é possível alterar seu resultado 
+	     posteriormente!
+             Agora, pressione ENTER para iniciar o processo de randomização.~
+@506 = ~6/6: 	     Você rolou um 6 para a sua jogada. Com base no lançamento dos 
+	     companheiros,você pode estimar aproximadamente quantos companheiros 
+	     irá encontrar e ajustar sua estratégia de jogo de acordo com isso. 
+	     Em alguns casos, o processo de randomização pode demorar bastante. 
+	     Por favor, aguarde até que termine. Não é possível alterar seu resultado 
+	     posteriormente!
+             Agora, pressione ENTER para iniciar o processo de randomização.~
+@507 = ~7/6: 	     Nossa, UAU! Você tirou um 7 com um dado de seis faces. Como
+             isso é possível?! Você deve ter usado um pergaminho da sorte... ;-)
+             Com base no lançamento dos companheiros, você pode estimar aproximadamente quantos
+             companheiros irá encontrar e ajustar sua estratégia de jogo de acordo com isso.
+	     Em alguns casos, o processo de randomização pode demorar bastante.
+             Por favor, aguarde até que termine. Não é possível alterar o resultado posteriormente!
+             Agora, pressione ENTER para iniciar o processo de randomização.~

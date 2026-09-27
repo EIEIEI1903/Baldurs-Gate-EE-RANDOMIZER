@@ -1,0 +1,121 @@
+@-1000= "Mod %TP2_FILE_NAME% posiada"
+
+@-1001= "kilka opcjonalnych komponentów.
+Aby zaoszczędzić czas, możesz globalnie wybrać, co ma się z nimi stać, zamiast odpowiadać osobno dla każdego z nich.
+"
+
+@-1002= "Co zrobić ze wszystkimi komponentami, które NIE SĄ JESZCZE zainstalowane?
+[I]Zainstalować, [S]Pominąć, [A]Pytać o każdy osobno? "
+
+@-1003= "Co zrobić ze wszystkimi komponentami, które SĄ JUŻ zainstalowane?
+[R]Zainstalować ponownie, [U]Odinstalować, [S]Pominąć, [A]Pytać o każdy osobno? "
+
+@-1004= "Utwórz kopię zapasową pliku:"
+
+@-1005= "i poszukaj pomocy pod adresem:"
+
+@-1006= "Zainstalować komponent ["
+
+@-1007= "] ?
+[R]Zainstalować ponownie, [N]Nic nie zmieniać, [U]Odinstalować lub [Q]Wyjść? "
+
+@-1008= "] ?
+[I]Zainstalować, [N]Nie instalować lub [Q]Wyjść? "
+
+@-1009= "Wpisz część nazwy modułu: "
+
+@-1010= "Ponowna instalacja komponentu ["
+
+@-1011= "] "
+
+@-1012= "Ponowna instalacja z użyciem języka"
+
+@-1013= "Najpierw usuwanie starej instalacji ["
+
+@-1014= "] ..."
+
+@-1015= "STARA INSTALACJA ZOSTAŁA POMYŚLNIE USUNIĘTA"
+
+@-1016= "Instalacja"
+
+@-1017= "BŁĄD podczas instalacji ["
+
+@-1018= "], powrót do poprzedniego stanu"
+
+@-1019= "POMYŚLNIE ZAINSTALOWANO "
+
+@-1020= "Pominięto"
+
+@-1021= "Usuwanie ["
+
+@-1022= "] (komponent #"
+
+@-1023= ")"
+
+@-1024= "POMYŚLNIE USUNIĘTO ["
+
+@-1025= "] ?
+[R]Zainstalować ponownie, [N]Nic nie zmieniać, [U]Odinstalować, [Q]Wyjść lub wybrać:"
+
+@-1026= "] ?
+[N]Nie, [Q]Wyjść lub wybrać:"
+
+@-1027= " (obecnie zainstalowany="
+
+@-1028= "Czy chcesz wyświetlić komponenty ["
+
+@-1029= "] ?
+[Y]Tak, [N]Nie? "
+
+@-1030= "] ?
+wybierz:"
+
+@-1031= "] ?
+[R]Zainstalować ponownie, [N]Nic nie zmieniać, [U]Odinstalować, [Q]Wyjść lub wybrać:"
+
+@-1032= "NIE ZAINSTALOWANO Z POWODU BŁĘDÓW"
+
+@-1033= "ZAINSTALOWANO Z OSTRZEŻENIAMI "
+
+@-1034= "Czy chcesz wyświetlić plik Readme? [Y]Tak [N]Nie"
+
+@-1035= "Używanie języka"
+
+@-1036= "Grupa ["
+
+@-1037= "] została pominięta, ponieważ jej wymagania wstępne nie zostały spełnione."
+
+@-1038= "[A]Pytać o każdy komponent, [S]pominąć wszystkie lub wybrać predefiniowaną opcję:"
+
+@-1039= "[A]Pytać o każdy komponent, [R]ponownie zainstalować bieżącą konfigurację, [U]odinstalować wszystkie, [S]pominąć wszystkie lub wybrać predefiniowaną opcję:"
+
+@-1040= "
+Wybierz język, w którym chcesz grać.
+Jeśli później zechcesz grać w innym języku, będziesz musiał zmienić plik weidu.conf i ponownie zainstalować swoje mody.
+"
+
+@-1041= "Czeski"
+@-1042= "Niemiecki"
+@-1043= "Angielski"
+@-1044= "Hiszpański"
+@-1045= "Francuski"
+@-1046= "Włoski"
+@-1047= "Polski"
+@-1048= "Portugalski"
+@-1049= "Turecki"
+@-1050= "Japoński"
+@-1051= "Koreański"
+@-1052= "Chiński uproszczony"
+@-1053= "Rosyjski"
+@-1054= "Ukraiński"
+
+@-1060= "
+Ta gra jest dostępna w wielu językach, ale WeiDU nie wie, którego języka gry użyto podczas instalacji tego moda.
+
+Podaj, którego języka gry użyto podczas instalacji tego moda. Twój wybór będzie używany do momentu zakończenia działania WeiDU, ale nie zostanie zapisany.
+"
+
+@-1061= "
+Używanie"
+
+@-1062= " i "

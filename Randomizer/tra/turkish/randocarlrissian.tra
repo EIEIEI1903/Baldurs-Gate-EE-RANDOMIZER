@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     Oturumun için zar atmış ve 1 gelmiştir. Yoldaş atışına dayanarak
+             karşına çıkacak yoldaş sayısını yaklaşık olarak tahmin edebilir ve
+             oyun tarzını buna göre ayarlayabilirsin. Bazı durumlarda
+             rastgeleleştirme işlemi oldukça uzun sürebilir. Lütfen
+             bu süre boyunca bekle. Sonuçta değişiklik yapmak mümkün değildir!
+             Şimdi ENTER tuşuna basarak rastgeleleştirme işlemini başlat.~
+@502 = ~2/6: 	     Oynadığın turda zarın 2 geldi. Yoldaş zar atışı sayesinde
+             karşına çıkacak yoldaş sayısını yaklaşık olarak tahmin edebilir ve
+             oyun tarzını buna göre ayarlayabilirsin. Bazı durumlarda
+             rastgeleleştirme işlemi oldukça uzun sürebilir. Lütfen
+             bu süre boyunca bekleyin. Sonuçlarınızı sonradan değiştirmek mümkün değildir!
+             Şimdi ENTER tuşuna basarak rastgeleleştirme işlemini başlatın.~
+@503 = ~3/6: 	     Oynayacağınız tur için zar atışında 3 çıktı. Yoldaş zar atışına göre,
+	     yaklaşık olarak kaç tane yoldaşla karşılaşacağını tahmin edebilir ve
+             oyun tarzını buna göre ayarlayabilirsin. Bazı durumlarda
+             rastgele seçme işlemi oldukça uzun sürebilir. Lütfen
+             bu süre boyunca bekle. Sonuçlarını sonradan değiştirmek mümkün değildir!
+             Şimdi ENTER tuşuna basarak rastgele seçme işlemini başlat.~
+@504 = ~4/6: 	     Oynadığın turda zarın 4 geldi. Yoldaş zar atışına göre
+             karşına çıkacak yoldaş sayısını yaklaşık olarak tahmin edebilir ve
+             oyun tarzını buna göre ayarlayabilirsin. Bazı durumlarda
+             rastgele seçme işlemi oldukça uzun sürebilir. Lütfen
+             bu süre boyunca bekle. Sonuçta değişiklik yapmak mümkün değildir!
+             Şimdi ENTER tuşuna basarak rastgeleleştirme işlemini başlat.~
+@505 = ~5/6: 	     Oynadığın turda 5 attın. Yoldaş atışına göre
+             karşına çıkacak yoldaş sayısını yaklaşık olarak tahmin edebilir ve
+             oyun tarzını buna göre ayarlayabilirsin. Bazı durumlarda
+             rastgeleleştirme işlemi oldukça uzun sürebilir. Lütfen
+             bu süre boyunca bekleyin. Sonuçlarınızı sonradan değiştirmek mümkün değildir!
+             Şimdi ENTER tuşuna basarak rastgeleleştirme işlemini başlatın.~
+@506 = ~6/6: 	     Oynayacağınız tur için zar atışında 6 çıktı. Bir yoldaş zar atışı sayesinde,
+	     yaklaşık olarak kaç tane yoldaşla karşılaşacağını tahmin edebilir ve
+             oyun tarzını buna göre ayarlayabilirsin. Bazı durumlarda
+             rastgele seçme işlemi oldukça uzun sürebilir. Lütfen
+             bu süre boyunca bekle. Sonuçlarını sonradan değiştirmek mümkün değildir!
+             Şimdi ENTER tuşuna basarak rastgele seçme işlemini başlat.~
+@507 = ~7/6: 	     Vay canına! Altı yüzlü bir zarla 7 çıkardın. Bu nasıl
+             olabilir ki?! Herhalde bir Şans Parşömeni kullanmış olmalısın... ;-)
+             Bir yoldaş atışı sayesinde, yaklaşık olarak kaç tane
+             yoldaşla karşılaşacağını tahmin edebilir ve oyun tarzını buna göre ayarlayabilirsin.
+	     Bazı durumlarda rastgeleleştirme işlemi oldukça uzun sürebilir.
+             Lütfen bu süre boyunca bekle. Sonuçta sonradan değişiklik yapmak mümkün değildir!
+             Şimdi ENTER tuşuna basarak rastgeleleştirme işlemini başlat.~

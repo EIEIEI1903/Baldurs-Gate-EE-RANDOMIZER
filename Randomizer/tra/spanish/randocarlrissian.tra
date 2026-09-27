@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     Has sacado un 1 en la tirada para tu partida. A partir de una tirada de compañeros,
+             puedes calcular aproximadamente con cuántos compañeros te encontrarás y
+             adaptar tu estrategia en consecuencia. En algunos casos, el
+             proceso de aleatorización puede llevar bastante tiempo. Por favor, espera
+             mientras tanto. ¡No es posible modificar tu resultado a posteriori!
+             Pulsa ahora INTRO para iniciar el proceso de aleatorización.~
+@502 = ~2/6: 	     Has sacado un 2 en la tirada para tu partida. A partir de una tirada de compañeros
+             puedes calcular aproximadamente con cuántos compañeros te encontrarás y
+             adaptar tu estilo de juego en consecuencia. En determinadas circunstancias, el
+             proceso de aleatorización puede llevar bastante tiempo. Por favor, espera
+             mientras tanto. ¡No es posible modificar el resultado una vez obtenido!
+             Pulsa ahora INTRO para iniciar el proceso de aleatorización.~
+@503 = ~3/6: 	     Has sacado un 3 en la tirada para tu partida. Basándote en una tirada de compañeros
+	     puedes calcular aproximadamente con cuántos compañeros te encontrarás y
+             adaptar tu estilo de juego en consecuencia. En algunos casos, el
+             proceso de aleatorización puede llevar bastante tiempo. Por favor, espera
+             mientras tanto. ¡No es posible modificar el resultado una vez obtenido!
+             Pulsa ahora INTRO para iniciar el proceso de aleatorización.~
+@504 = ~4/6: 	     Has sacado un 4 en la tirada para tu partida. A partir de una tirada de compañeros,
+             puedes calcular aproximadamente con cuántos compañeros te encontrarás y
+             adaptar tu estrategia en consecuencia. En algunos casos, el
+             proceso de aleatorización puede llevar bastante tiempo. Por favor, espera
+             mientras tanto. ¡No es posible modificar tu resultado a posteriori!
+             Pulsa ahora INTRO para iniciar el proceso de aleatorización.~
+@505 = ~5/6: 	     Has sacado un 5 en tu tirada. A partir de una tirada de compañeros
+             puedes calcular aproximadamente con cuántos compañeros te encontrarás y
+             adaptar tu estrategia de juego en consecuencia. En determinadas circunstancias, el
+             proceso de aleatorización puede llevar bastante tiempo. Por favor, espera
+             mientras tanto. ¡No es posible modificar el resultado una vez obtenido!
+             Pulsa ahora INTRO para iniciar el proceso de aleatorización.~
+@506 = ~6/6: 	     Has sacado un 6 en tu tirada. Basándote en una tirada de compañeros
+	     puedes calcular aproximadamente con cuántos compañeros te encontrarás y
+             adaptar tu estilo de juego en consecuencia. En algunos casos, el
+             proceso de aleatorización puede llevar bastante tiempo. Por favor, espera
+             mientras tanto. ¡No es posible modificar el resultado una vez obtenido!
+             Pulsa ahora INTRO para iniciar el proceso de aleatorización.~
+@507 = ~7/6: 	     ¡Oh, GUAU! Has sacado un 7 con un dado de seis caras. ¿Cómo puede
+             ser eso?! Seguro que has usado un pergamino de la suerte... ;-)
+             Con una tirada de compañeros puedes calcular aproximadamente cuántos
+             compañeros te encontrarás y adaptar tu estilo de juego en consecuencia.
+	     En algunos casos, el proceso de aleatorización puede llevar bastante tiempo.
+             Por favor, espera mientras tanto. ¡No es posible modificar el resultado una vez obtenido!
+             Pulsa ahora INTRO para iniciar el proceso de aleatorización.~

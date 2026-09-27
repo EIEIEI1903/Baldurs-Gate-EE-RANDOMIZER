@@ -1,0 +1,17 @@
+// UI und Interface (Hauptmenü)
+@100  = ~随机者~
+@200  = ~启动 Basic_Cast 随机器~
+@300  = ~启动 Advanced_Cast 随机器~
+@400  = ~启动 Base_Cast_去除剂_工具~
+
+// Error und Message Handling der Anwendung
+@101  = ~错误 - 游戏必须是 Baldurs_Gate_1_EE、SoD 或 Baldurs_Gate_2_EE！~
+@102  = ~错误：-缺少 SoD Merge Argent77- 无法移除 Yeslick。他将继续存在！~  
+@103  = ~已找到 Argent77 DLC Merger。开始修补过程...~
+@104  = ~错误 - 必须安装至少 6 个随从模组！请先安装 NPC 模组。这不是单人游戏模组！~
+@105  = ~错误 - 必须安装至少 3 个随从模组！请先安装 NPC 模组。这不是单人游戏模组！~
+@106  = ~错误 – 模组：«Mercenaries of the Sword Coast»已检测到！此模组碰巧与 随机者 不兼容，因为两者都在 Baldur's Gate 空间受限的宇宙中遵循不同的游戏设计理念。~
+
+
+
+
