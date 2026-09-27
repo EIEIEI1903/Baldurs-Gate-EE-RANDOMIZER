@@ -1,0 +1,640 @@
+// ==================================================
+// LÖSCHFUNKTION
+// ==================================================
+
+
+		INCLUDE ~Randomizer/lib/helper.tph~
+		INCLUDE ~Randomizer/lib/UPD_branwen.tph~
+		INCLUDE ~Randomizer/lib/xanNeverHappendHelper.tph~
+		INCLUDE ~Randomizer/lib/Argent77.tpa~
+		INCLUDE ~Randomizer/lib/CainZarHelper.tpa~
+
+
+
+// ++++++++++++++++
+// Basic-CHARAKTERE |
+// ----------------
+
+DEFINE_ACTION_FUNCTION DELETE_Ajantis
+
+    BEGIN
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~AJANTI~
+			END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Minsc-Dynaheir-Edwin
+
+    BEGIN
+    
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~MINSC~
+			END
+		BUT_ONLY
+
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~DYNAHE~
+    		END
+		BUT_ONLY
+
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~EDWIN~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Xar-Montaron
+
+    BEGIN
+  
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~XZAR~
+    		END
+		BUT_ONLY
+
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~MONTAR~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Yeslick
+
+    BEGIN
+
+		ACTION_IF ((FILE_EXISTS ~dlc/sod-dlc.zip~) OR (FILE_EXISTS ~sod-dlc.zip~)) THEN BEGIN
+				PRINT @102 
+		END ELSE BEGIN
+				SILENT    
+				COPY_EXISTING ~BALDUR.GAM~ ~override~
+					LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+						STR_VAR
+							npc_resref = ~YESLIC~
+						END
+				BUT_ONLY
+//-----------------------------------------------------------------------------------------				
+//----------Dialogpatcher starten
+//-----------------------------------------------------------------------------------------	
+					
+					PRINT @103
+					SILENT
+
+					<<<<<<<< .../RANDOMIZER-inlined/minec2.d
+						REPLACE_SAY ~MINEC2~ 5 @0
+					>>>>>>>>
+					COMPILE ~.../RANDOMIZER-inlined/minec2.d~
+				
+//-----------------------------------------------------------------------------------------		
+				 END	 	
+    
+	END	
+DEFINE_ACTION_FUNCTION DELETE_BEAM_Neera
+
+    BEGIN
+		ACTION_IF MOD_IS_INSTALLED ~EE_CONTENT_TWEAKS\EE_CONTENT_TWEAKS.TP2~ ~1~ OR 
+				  MOD_IS_INSTALLED ~EE_CONTENT_TWEAKS\EE_CONTENT_TWEAKS.TP2~ ~2~ BEGIN		
+		END ELSE BEGIN
+// 		if peccas content tweaks are installed, the standard deletion routine of Randomizer won't trigger.
+			LAUNCH_ACTION_FUNCTION DELETE_NEERA_BG1 END  
+				 END		 
+	END
+DEFINE_ACTION_FUNCTION DELETE_BEAM_Dorn
+
+    BEGIN
+		ACTION_IF MOD_IS_INSTALLED ~EE_CONTENT_TWEAKS\EE_CONTENT_TWEAKS.TP2~ ~5~ BEGIN
+// 		if peccas content tweaks are installed, the standard deletion routine of Randomizer won't trigger.		
+		END ELSE BEGIN
+			LAUNCH_ACTION_FUNCTION DELETE_DORN END 
+				 END	        	 
+	END
+DEFINE_ACTION_FUNCTION DELETE_Kivan
+
+    BEGIN
+        
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~KIVAN~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Coran
+
+    BEGIN
+        
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~CORAN~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_BEAM_Rasaadyn
+
+    BEGIN
+	
+		ACTION_IF MOD_IS_INSTALLED ~EE_CONTENT_TWEAKS\EE_CONTENT_TWEAKS.TP2~ ~4~ BEGIN
+// 		if peccas content tweaks are installed, the standard deletion routine of Randomizer won't trigger.		
+		END ELSE BEGIN
+			LAUNCH_ACTION_FUNCTION DELETE_RASAAD END 
+				 END	        
+	END
+DEFINE_ACTION_FUNCTION DELETE_Quayle
+
+    BEGIN
+        
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~QUAYLE~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Viconia
+
+    BEGIN
+        
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~VICONI~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_BEAM_Baeloth_Barrityl
+
+    BEGIN
+        
+		LAUNCH_ACTION_FUNCTION DELETE_BAELOTH_BG1 END
+	 	
+	END
+DEFINE_ACTION_FUNCTION DELETE_UPD_Branwen
+
+    BEGIN
+        
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~BRANWE~
+    		END
+		BUT_ONLY
+
+		COPY_EXISTING ~AR4900.ARE~ ~override~
+			LAUNCH_PATCH_FUNCTION UPD_branwen END
+		BUT_ONLY
+
+    END
+DEFINE_ACTION_FUNCTION DELETE_Garrick
+
+    BEGIN
+        
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~GARRIC~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Safana
+
+    BEGIN
+  
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~SAFANA~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Shar-Teel_Dos
+
+    BEGIN
+       
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~SHARTE~
+    		END
+		BUT_ONLY
+/*		
+	This mod is a follow-up mod for Shar-Teel, 
+	for SoD! It is not part of the selection process
+    and will always be removed as soon as 
+	Shar-Teel is eliminated. No var in the counter!
+	---------------------
+*/			
+		PERMAREMOVE ~K9SHARTEELNPC\K9SHARTEELNPC.tp2~
+//  --------------------- 
+
+    END
+DEFINE_ACTION_FUNCTION DELETE_Faldorn
+
+    BEGIN
+      
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~FALDOR~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Alora
+
+    BEGIN
+       
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~ALORA~
+    		END
+		BUT_ONLY
+ 
+    END
+DEFINE_ACTION_FUNCTION DELETE_Xan
+
+    BEGIN
+
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~XAN~
+    		END
+		BUT_ONLY
+		COPY_EXISTING ~AR5405.ARE~ ~override~
+
+			LPF DELETE_AREA_ITEM
+				STR_VAR
+					item_to_delete = ~SW1H13~
+			END
+
+		BUT_ONLY
+		COPY_EXISTING ~AR5405.ARE~ ~override~	
+			LAUNCH_PATCH_FUNCTION xan_never_happend END
+		BUT_ONLY
+		 
+	END
+DEFINE_ACTION_FUNCTION DELETE_Tiax
+
+    BEGIN
+       
+        COPY_EXISTING ~BALDUR.GAM~ ~override~
+			LAUNCH_PATCH_FUNCTION DELETE_GAM_NPC
+        		STR_VAR
+            	npc_resref = ~TIAX~
+    		END
+		BUT_ONLY
+		 
+// TODO: Dialoge checken Eltan
+    END
+
+
+// 	++++++++++++++++
+// 	MOD-CHARAKTERE |
+// 	----------------
+/*
+New function- Permaremove(): Significantly expands the WEIDU delete function (dangerous!).
+Notes:
+This is a powerful feature that, for reasons of convention, may only be used in the 
+Randomizer and to enable its core functionality.
+-----
+*/
+DEFINE_ACTION_FUNCTION DELETE_MOD_AydenWarlock
+
+    BEGIN
+    	PERMAREMOVE ~AYDEN/SETUP-AYDEN.tp2~
+	END
+DEFINE_ACTION_FUNCTION DELETE_MOD_AuraGlimmershine
+
+    BEGIN
+	
+    	PERMAREMOVE ~AURA_BG1/SETUP-AURA_BG1_2_EET.tp2~
+
+		// (possible older versions)
+    	PERMAREMOVE ~AURA_BG1/SETUP-AURA_BG1.tp2~
+    	PERMAREMOVE ~AURA_BG1/SETUP-AURA_BG1_2.tp2~	
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Glams-Pack
+
+    BEGIN
+		PERMAREMOVE ~GLAMNPCPACK/SETUP-GLAMNPCPACK.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_AscBreager
+
+    BEGIN
+    	PERMAREMOVE ~ACBRE/ACBRE.tp2~
+	END
+DEFINE_ACTION_FUNCTION DELETE_MOD_IsraGhadir
+
+    BEGIN
+    	PERMAREMOVE ~ISRA/ISRA.tp2~
+	END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Sirene
+
+    BEGIN
+    	PERMAREMOVE ~SIRENE/SETUP-SIRENE.tp2~
+	END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Indira
+
+    BEGIN          
+		PERMAREMOVE ~INDINPC/SETUP-INDINPC.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Valerie_Lysander
+
+    BEGIN
+		PERMAREMOVE ~VALERIE/VALERIE.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_DrakeCaulfield
+
+    BEGIN
+		PERMAREMOVE ~DRAKE/SETUP-DRAKE.tp2~
+	END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Emily
+
+    BEGIN
+		PERMAREMOVE ~EMILY/EMILY.tp2~
+//        Baldur's Gate II follow-up mod, partially a BG1 variant of Skitia's NPCs
+//        It is only uninstalled if the main component (BG II) is active.		
+		PERMAREMOVE ~SKITIANPCS\SETUP-SKITIANPCS.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Finch
+
+    BEGIN              
+		PERMAREMOVE ~FINCHNPC/FINCHNPC.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Gavin
+
+    BEGIN          
+		PERMAREMOVE ~GAVIN/GAVIN.tp2~
+	END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Recorder
+
+    BEGIN
+		PERMAREMOVE ~RECORDER/SETUP-RECORDER.tp2~
+//        Baldur's Gate II follow-up mod, partially a BG1 variant of Skitia's NPCs
+//        It is only uninstalled if the main component (BG II) is active.		 		
+		PERMAREMOVE ~SKITIANPCS\SETUP-SKITIANPCS.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Petsy_Chattertone
+
+    BEGIN
+		PERMAREMOVE ~PETSY/PETSY.tp2~	
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Ophysia_Lorines
+
+    BEGIN
+		PERMAREMOVE ~OphysiaBG1/OphysiaBG1.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Zakrion_Dessani
+
+    BEGIN
+		PERMAREMOVE ~Zakrion_BG1/Zakrion_BG1.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Caina-et-Zarra
+
+    BEGIN	
+		PERMAREMOVE ~INSTALL/Setup-INSTALL.tp2~
+		PERMAREMOVE ~INSTALL/Setup-Kit.tp2~
+		LAF CAINZARHELPER END
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_DogGrey
+
+    BEGIN
+		PERMAREMOVE ~c#greythedog/Setup-c#greythedog.tp2~
+	END
+DEFINE_ACTION_FUNCTION DELETE_MOD_White
+
+    BEGIN
+		PERMAREMOVE ~white/white.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Walahnan
+
+    BEGIN
+		PERMAREMOVE ~WALAHNAN/WALAHNAN.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Kale
+
+    BEGIN
+		PERMAREMOVE ~KALE/KALE.tp2~
+//        Baldur's Gate II follow-up mod, partially a BG1 variant of Skitia's NPCs
+//        It is only uninstalled if the main component (BG II) is active.	
+		PERMAREMOVE ~SKITIANPCS\SETUP-SKITIANPCS.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Helga
+
+    BEGIN          
+		PERMAREMOVE ~HELGA/SETUP-HELGA.tp2~
+
+//        Baldur's Gate II follow-up mod, partially a BG1 variant of Skitia's NPCs
+//        It is only uninstalled if the main component (BG II) is active.		 		
+			PERMAREMOVE ~SKITIANPCS\SETUP-SKITIANPCS.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Tenya_Thermidor
+
+    BEGIN                 
+		PERMAREMOVE ~SETUP-TENYATHERMIDOR.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Vienxay
+
+    BEGIN
+
+		PERMAREMOVE ~VIENXAY/VIENXAY.tp2~
+
+//        Baldur's Gate II follow-up mod, partially a BG1 variant of Skitia's NPCs
+//        It is only uninstalled if the main component (BG II) is active.			 
+		
+		PERMAREMOVE ~SKITIANPCS\SETUP-SKITIANPCS.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_MurNeth
+
+    BEGIN
+		PERMAREMOVE ~MUR'NETH/MUR'NETH.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_VerrSza
+
+    BEGIN
+		PERMAREMOVE ~VERRSZA/VERRSZA.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Bristlelick
+
+    BEGIN
+		PERMAREMOVE ~BRISTLELICK/BRISTLELICK.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Morg
+
+    BEGIN
+		PERMAREMOVE ~K4MORGUL/setup-k4morgul.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Brandock 
+
+    BEGIN
+		PERMAREMOVE ~C#Brandock/C#Brandock.tp2~
+	END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Galileo
+
+    BEGIN
+		PERMAREMOVE ~7c-gallileo-master/7c-galileo.tp2~
+    END
+DEFINE_ACTION_FUNCTION DELETE_MOD_Ishlilka
+
+    BEGIN
+		PERMAREMOVE ~Ishlilkamod/Ishlilkamod-setup.tp2~
+    END             
+DEFINE_ACTION_FUNCTION DELETE_MOD_Helarine
+
+    BEGIN
+		PERMAREMOVE ~JKLHEL/HELARINE_BGEE.tp2~
+    END         
+DEFINE_ACTION_FUNCTION DELETE_MOD_Shuk-Goblin
+
+    BEGIN
+		PERMAREMOVE ~SHUKBG1EE/Setup-SHUKBG1EE.tp2~
+    END             
+DEFINE_ACTION_FUNCTION DELETE_MOD_Drizzt_Saga
+
+    BEGIN
+		PERMAREMOVE ~DRIZZTSAGA/drizztsaga.tp2~
+    END             	             
+DEFINE_ACTION_FUNCTION DELETE_MOD_SoD_MotherLost
+
+    BEGIN
+		PERMAREMOVE ~MotherSoD/MotherSoD.tp2~
+    END 
+	
+// v.0.0.6 changed in: v.0.0.6,5 and v.0.0.7
+
+DEFINE_ACTION_FUNCTION DELETE_MOD_MHORAM
+
+    BEGIN
+		PERMAREMOVE ~MHORAM/MHORAM.tp2~ 
+    END 
+DEFINE_ACTION_FUNCTION DELETE_MOD_Tamoko_SoC
+
+    BEGIN
+		PERMAREMOVE ~EET_SWO/EET_SWO.tp2~ 
+    END   	
+DEFINE_ACTION_FUNCTION DELETE_MOD_wmAREEN
+
+    BEGIN
+		PERMAREMOVE ~AREENWILDMAGE/AREENWILDMAGE.tp2~ ~0~ 
+		    // AUSNAHMSWEISE(!) mit com-Number , weil angeblich unabhängig von Areen
+			// EXCEPTIONALLY(!) using com-Number, because it is supposedly independent of Areen
+    END    
+DEFINE_ACTION_FUNCTION DELETE_MOD_ArkanisSoD
+
+    BEGIN
+		PERMAREMOVE ~ARKANISSOD/ARKANISSOD.tp2~ 
+    END  
+DEFINE_ACTION_FUNCTION DELETE_MOD_Amrosssss
+
+    BEGIN
+		PERMAREMOVE ~AMROSNPC/SETUP-AMROSNPC.tp2~ 
+
+    END   
+DEFINE_ACTION_FUNCTION DELETE_MOD_DesireeNotnickweilbetaxD
+
+    BEGIN
+		PERMAREMOVE ~DESIRE/SETUP-DESIRE.tp2~ 
+    END  
+DEFINE_ACTION_FUNCTION DELETE_MOD_ELLYRAN
+
+    BEGIN
+		PERMAREMOVE ~SETUP-ELLYRIAN.tp2~
+    END 
+DEFINE_ACTION_FUNCTION DELETE_MOD_Haiass
+
+    BEGIN
+		PERMAREMOVE ~HAIASS/SETUP-HAIASS.tp2~
+    END     
+DEFINE_ACTION_FUNCTION DELETE_MOD_Husam
+
+    BEGIN
+		PERMAREMOVE ~C#HUSAM/C#HUSAM.tp2~
+    END	
+DEFINE_ACTION_FUNCTION DELETE_MOD_Alarin
+// AUSNAHMSWEISE(!) - Kitmods gehören nicht in den Randomizer (ans Kit gebunden)
+// EXCEPTION(!) - Kit mods do not belong in the randomizer (they are tied to the kit)
+    BEGIN
+		PERMAREMOVE ~ZKWSALARIN/SETUP-ZKWSALARIN.tp2~
+    END  
+DEFINE_ACTION_FUNCTION DELETE_MOD_vincentravenpraesentiertKORAX
+
+    BEGIN
+		PERMAREMOVE ~KORAX_NPC/KORAX_NPC.tp2~
+    END 
+DEFINE_ACTION_FUNCTION DELETE_MOD_KVelarinAudayrr
+
+    BEGIN
+		PERMAREMOVE ~KVEL_BG1/SETUP-KVEL_BG1.tp2~
+    END 
+DEFINE_ACTION_FUNCTION DELETE_MOD_Margarita
+
+    BEGIN
+		PERMAREMOVE ~MARGARITA/MARGARITA.tp2~
+    END   
+DEFINE_ACTION_FUNCTION DELETE_MOD_UZIL
+
+    BEGIN
+		PERMAREMOVE ~SETUP-MYMOD.tp2~
+    END   
+DEFINE_ACTION_FUNCTION DELETE_MOD_VICRIL
+
+    BEGIN
+		PERMAREMOVE ~SETUP-VICRIL.tp2~
+    END 
+	
+/*
+------------------------------------------------------------------------------------------------------------------------------	
+Ab hier beginnen die Sonderfälle - special cases
+------------------------------------------------------------------------------------------------------------------------------
+*/
+
+DEFINE_ACTION_FUNCTION DELETE_MOD_PFAUG
+
+    BEGIN
+		PERMAREMOVE ~PfaugNPC/setup-PfaugNPC.tp2~ //- Unknown mod that was seemingly online for a short time
+		PERMAREMOVE ~setup-PfaugNPC.tp2~
+    END 	
+DEFINE_ACTION_FUNCTION DELETE_MOD_CLASSIC_mawgul
+
+    BEGIN
+		PERMAREMOVE ~MAWGULNPC/SETUP-MAWGULNPC.tp2~
+	// wegen Nichtwartung oder offizieller Inkompatibilität keine größeren Abfragen - Classic mod -Works with EE
+    END 
+DEFINE_ACTION_FUNCTION DELETE_MOD_CLASSIC_mtstaim
+
+    BEGIN
+		PERMAREMOVE ~MTSTaim/MTSTAIM.tp2~
+	// wegen Nichtwartung oder offizieller Inkompatibilität keine größeren Abfragen - Classic mod -Works with EE
+    END
+	
+/* 
+Isaac Placeholder from Skitia
+DEFINE_ACTION_FUNCTION DELETE_MOD_Isaac
+
+    BEGIN
+		PERMAREMOVE ~Isaac/Isaac.tp2~
+		PERMAREMOVE ~Isaac/Setup-Isaac.tp2~
+	->Not included atm
+
+    END 
+*/

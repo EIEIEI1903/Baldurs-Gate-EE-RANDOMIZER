@@ -1,0 +1,18 @@
+// UI und Interface (Hauptmenü)
+@100  = ~Randomizer~
+@200  = ~Spustit Basic_Cast Randomizer~
+@300  = ~Spustit Advanced_Cast Randomizer~
+@400  = ~Spustit Base_Cast_Remover_Tool~
+
+// Error und Message Handling der Anwendung
+@101  = ~CHYBA - Hra musí být Baldurs_Gate_1_EE, SoD nebo Baldurs_Gate_2_EE!~
+@102  = ~CHYBA: -SoD Merge Argent77 chybí- Yeslicka nebylo možné odstranit. Bude i nadále přítomen!~  
+@103  = ~Argent77 DLC Merger nalezen. Zahajuji proces opravy...~
+@104  = ~CHYBA – Musí být nainstalováno alespoň 6 modů pro společníky! Nejprve nainstaluj mody pro NPC. Toto není mod pro jednu hráče!~
+@105  = ~CHYBA – Musí být nainstalováno alespoň 3 mody pro společníky! Nejprve nainstaluj mody pro NPC. Toto není mod pro jednu hráče!~
+@106  = ~CHYBA – Mod: «Mercenaries of the Sword Coast» detekován! Tento mod je náhodou nekompatibilní s Randomizerem, protože oba sledují různé koncepty tvorby her v rámci prostorově omezeného vesmíru Baldur's Gate.~
+
+
+
+
+

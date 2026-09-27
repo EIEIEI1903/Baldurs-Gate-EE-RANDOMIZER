@@ -1,0 +1,121 @@
+@-1000= "A(z) %TP2_FILE_NAME% mod"
+
+@-1001= "több opcionális komponenst tartalmaz.
+Időt takaríthat meg azzal, hogy globálisan kiválasztja, mi történjen velük, ahelyett, hogy minden egyes komponensről külön kellene döntenie.
+"
+
+@-1002= "Mi történjen az összes olyan komponenssel, amely MÉG NINCS telepítve?
+[I]Telepítés, [S]Kihagyás, [A]Kérdezzen rá mindegyikre külön? "
+
+@-1003= "Mi történjen az összes olyan komponenssel, amely MÁR TELEPÍTVE van?
+[R]Újratelepítés, [U]Eltávolítás, [S]Kihagyás, [A]Kérdezzen rá mindegyikre külön? "
+
+@-1004= "Kérjük, készítsen biztonsági másolatot a fájlról:"
+
+@-1005= "és kérjen segítséget itt:"
+
+@-1006= "A ["
+
+@-1007= "] komponens telepítése?
+[R]Újratelepítés, [N]Ne változtasson semmit, [U]Eltávolítás vagy [Q]Kilépés? "
+
+@-1008= "] ?
+[I]Telepítés, [N]Ne telepítse vagy [Q]Kilépés? "
+
+@-1009= "Adja meg a modul nevének egy részét: "
+
+@-1010= "A ["
+
+@-1011= "] komponens újratelepítése "
+
+@-1012= "Újratelepítés ezen a nyelven:"
+
+@-1013= "A(z) ["
+
+@-1014= "] régi telepítésének eltávolítása először ..."
+
+@-1015= "A RÉGI TELEPÍTÉS SIKERESEN ELTÁVOLÍTVA"
+
+@-1016= "Telepítés"
+
+@-1017= "HIBA a(z) ["
+
+@-1018= "] telepítésekor, visszatérés az előző állapothoz"
+
+@-1019= "SIKERESEN TELEPÍTVE "
+
+@-1020= "Kihagyva"
+
+@-1021= "A(z) ["
+
+@-1022= "] eltávolítása (komponens #"
+
+@-1023= ")"
+
+@-1024= "SIKERESEN ELTÁVOLÍTVA ["
+
+@-1025= "] ?
+[R]Újratelepítés, [N]Ne változtasson semmit, [U]Eltávolítás, [Q]Kilépés vagy válasszon:"
+
+@-1026= "] ?
+[N]Nem, [Q]Kilépés vagy válasszon:"
+
+@-1027= " (jelenleg telepítve="
+
+@-1028= "Szeretné megjeleníteni a(z) ["
+
+@-1029= "] komponenseit?
+[Y]Igen, [N]Nem? "
+
+@-1030= "] ?
+válasszon:"
+
+@-1031= "] ?
+[R]Újratelepítés, [N]Ne változtasson semmit, [U]Eltávolítás, [Q]Kilépés vagy válasszon:"
+
+@-1032= "HIBÁK MIATT NEM LETT TELEPÍTVE"
+
+@-1033= "FIGYELMEZTETÉSEKKEL TELEPÍTVE "
+
+@-1034= "Szeretné megjeleníteni a Readme fájlt? [Y]Igen [N]Nem"
+
+@-1035= "A nyelv használata"
+
+@-1036= "A(z) ["
+
+@-1037= "] csoport kihagyva, mert az előfeltételei nem teljesültek."
+
+@-1038= "[A]Kérdezzen rá minden komponensre, [S]Hagyja ki az összeset, vagy válasszon egy előre meghatározott lehetőséget:"
+
+@-1039= "[A]Kérdezzen rá minden komponensre, [R]Telepítse újra a jelenlegi konfigurációt, [U]Távolítsa el az összeset, [S]Hagyja ki az összeset, vagy válasszon egy előre meghatározott lehetőséget:"
+
+@-1040= "
+Kérjük, válassza ki a játék nyelvét.
+Ha később más nyelven szeretne játszani, módosítania kell a weidu.conf fájlt, és újra kell telepítenie a modokat.
+"
+
+@-1041= "Cseh"
+@-1042= "Német"
+@-1043= "Angol"
+@-1044= "Spanyol"
+@-1045= "Francia"
+@-1046= "Olasz"
+@-1047= "Lengyel"
+@-1048= "Portugál"
+@-1049= "Török"
+@-1050= "Japán"
+@-1051= "Koreai"
+@-1052= "Egyszerűsített kínai"
+@-1053= "Orosz"
+@-1054= "Ukrán"
+
+@-1060= "
+Ez a játék több nyelven is elérhető, de a WeiDU nem tudja, hogy a mod telepítésekor melyik játéknyelvet használták.
+
+Kérjük, adja meg, hogy a mod telepítésekor melyik játéknyelvet használták. A választása a WeiDU bezárásáig érvényben marad, de nem lesz elmentve.
+"
+
+@-1061= "
+A(z)"
+
+@-1062= " és "

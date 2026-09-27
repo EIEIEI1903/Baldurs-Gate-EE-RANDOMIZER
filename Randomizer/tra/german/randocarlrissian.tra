@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     Du hast für deinen Run eine 1 gewürfelt. Anhand eines Begleiter-Wurfes 
+	     kannst du ungefähr abwägen, wie viele Begleiter dir begegnen werden und 
+	     deine Spielweise entsprechend anpassen. Unter Umständen kann der 
+	     Randomisierungsvorgang reichlich Zeit in Anspruch nehmen. Bitte warte 
+	     solange. Eine nachträgliche Änderung deines Ergebnisses ist nicht möglich!
+	     Drücke nun ENTER, um den Randomisierungsvorgang zu starten.~
+@502 = ~2/6: 	     Du hast für deinen Run eine 2 gewürfelt. Anhand eines Begleiter-Wurfes 
+	     kannst du ungefähr abwägen, wie viele Begleiter dir begegnen werden und 
+	     deine Spielweise entsprechend anpassen. Unter Umständen kann der 
+	     Randomisierungsvorgang reichlich Zeit in Anspruch nehmen. Bitte warte 
+	     solange. Eine nachträgliche Änderung deines Ergebnisses ist nicht möglich!
+	     Drücke nun ENTER, um den Randomisierungsvorgang zu starten.~
+@503 = ~3/6:         Du hast für deinen Run eine 3 gewürfelt. Anhand eines Begleiter-Wurfes 
+	     kannst du ungefähr abwägen, wie viele Begleiter dir begegnen werden und 
+	     deine Spielweise entsprechend anpassen. Unter Umständen kann der 
+	     Randomisierungsvorgang reichlich Zeit in Anspruch nehmen. Bitte warte 
+	     solange. Eine nachträgliche Änderung deines Ergebnisses ist nicht möglich!
+	     Drücke nun ENTER, um den Randomisierungsvorgang zu starten.~
+@504 = ~4/6: 	     Du hast für deinen Run eine 4 gewürfelt. Anhand eines Begleiter-Wurfes 
+	     kannst du ungefähr abwägen, wie viele Begleiter dir begegnen werden und 
+	     deine Spielweise entsprechend anpassen. Unter Umständen kann der 
+	     Randomisierungsvorgang reichlich Zeit in Anspruch nehmen. Bitte warte 
+	     solange. Eine nachträgliche Änderung deines Ergebnisses ist nicht möglich!
+	     Drücke nun ENTER, um den Randomisierungsvorgang zu starten.~
+@505 = ~5/6: 	     Du hast für deinen Run eine 5 gewürfelt. Anhand eines Begleiter-Wurfes 
+	     kannst du ungefähr abwägen, wie viele Begleiter dir begegnen werden und 
+	     deine Spielweise entsprechend anpassen. Unter Umständen kann der 
+	     Randomisierungsvorgang reichlich Zeit in Anspruch nehmen. Bitte warte 
+	     solange. Eine nachträgliche Änderung deines Ergebnisses ist nicht möglich!
+	     Drücke nun ENTER, um den Randomisierungsvorgang zu starten.~
+@506 = ~6/6: 	     Du hast für deinen Run eine 6 gewürfelt. Anhand eines Begleiter-Wurfes 
+	     kannst du ungefähr abwägen, wie viele Begleiter dir begegnen werden und 
+	     deine Spielweise entsprechend anpassen. Unter Umständen kann der 
+	     Randomisierungsvorgang reichlich Zeit in Anspruch nehmen. Bitte warte 
+	     solange. Eine nachträgliche Änderung deines Ergebnisses ist nicht möglich!
+	     Drücke nun ENTER, um den Randomisierungsvorgang zu starten.~
+@507 = ~7/6: 	     Oh, WOW! Du hast mit einem sechseitigen Würfel eine 7 gewürfelt. Wie kann
+	     das sein?! Du hast wohl eine Schriftrolle des Glücks verwendet... ;-)
+	     Anhand eines Begleiter-Wurfes kannst du ungefähr abwägen, wie viele 
+	     Begleiter dir begegnen werden und deine Spielweise entsprechend anpassen. 
+	     Unter Umständen kann der Randomisierungsvorgang reichlich Zeit in Anspruch nehmen. 
+	     Bitte warte solange. Eine nachträgliche Änderung deines Ergebnisses ist nicht möglich!
+	     Drücke nun ENTER, um den Randomisierungsvorgang zu starten.~

@@ -1,0 +1,736 @@
+DEFINE_ACTION_FUNCTION Advanced_Cast
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	INT_VAR
+	MaxCount 			= 1
+    BegleiterWuerfel 	= 1
+	num 	    		= 1
+	STR_VAR
+//  str00  =  Ajantis
+//  str01  =  Alora	
+	str02  = ~AMROSNPC/SETUP-AMROSNPC.tp2~
+	str03  = ~AREENWILDMAGE/AREENWILDMAGE.tp2~
+	str04  = ~ARKANISSOD/ARKANISSOD.tp2~
+	str05a = ~AURA_BG1/SETUP-AURA_BG1_2_EET.tp2~
+	str05b = ~AURA_BG1/SETUP-AURA_BG1_2.tp2~
+	str05c = ~AURA_BG1/SETUP-AURA_BG1.tp2~
+	str06  = ~AYDEN/SETUP-AYDEN.tp2~
+//  str07  =  Baeloth	
+	str08  = ~C#Brandock/C#Brandock.tp2~
+//  str09  =  Branwen
+	str10  = ~ACBRE/ACBRE.tp2~
+	str11  = ~BRISTLELICK/BRISTLELICK.tp2~
+//  str12  =  Coran	
+	str13  = ~DESIRE/SETUP-DESIRE.tp2~
+//  str14  =  Dorn
+	str15  = ~DRAKE/SETUP-DRAKE.tp2~
+	str16  = ~DRIZZTSAGA/drizztsaga.tp2~
+	str17a = ~SETUP-ELLYRIAN.tp2~
+	str17b = ~Ellyrian/SETUP-ELLYRIAN.tp2~
+	str18  = ~EMILY/EMILY.tp2~
+//  str19  =  Faldorn	
+	str20  = ~FINCHNPC/FINCHNPC.tp2~
+	str21  = ~7c-gallileo-master/7c-galileo.tp2~
+	str22  = ~GAVIN/GAVIN.tp2~
+//  str23  =  Garrick
+	str24  = ~GLAMNPCPACK/SETUP-GLAMNPCPACK.tp2~ 
+	str25  = ~c#greythedog/Setup-c#greythedog.tp2~
+    str26  = ~HAIASS/SETUP-HAIASS.tp2~	
+	str27  = ~HELGA/SETUP-HELGA.tp2~ 
+	str28  = ~JKLHEL/HELARINE_BGEE.tp2~ 
+	str29  = ~C#HUSAM/C#HUSAM.tp2~
+	str30  = ~INDINPC/SETUP-INDINPC.tp2~ 
+//	str31a = ~Isaac/Setup-Isaac.tp2~
+//	str31b = ~Isaac/Isaac.tp2~
+	str32  = ~Ishlilkamod/Ishlilkamod-setup.tp2~
+	str33  = ~ISRA/ISRA.tp2~
+	str34  = ~KALE/KALE.tp2~
+//	str35  =  Kivan	
+	str36  = ~KORAX_NPC/KORAX_NPC.tp2~
+	str37  = ~KVEL_BG1/SETUP-KVEL_BG1.tp2~
+	str38  = ~MARGARITA/MARGARITA.tp2~
+	str39  = ~MHORAM/MHORAM.tp2~
+	str40  = ~K4MORGUL/setup-k4morgul.tp2~
+//	str31  =  Minsc-Edwin-Dynaheir		
+	str42  = ~MotherSoD/MotherSoD.tp2~ 
+	str43  = ~MUR'NETH/MUR'NETH.tp2~
+//	str44  =  Neera
+	str45  = ~OphysiaBG1/OphysiaBG1.tp2~ 
+	str46  = ~PETSY/PETSY.tp2~
+//	str47  =  Quale	
+//	str48  =  Rasaad yn Bashir	
+	str49  = ~RECORDER/SETUP-RECORDER.tp2~
+//	str50  =  Safana
+//	str51  =  Shar-Teel Dosan		
+	str52  = ~SHUKBG1EE/Setup-SHUKBG1EE.tp2~
+	str53  = ~SIRENE/SETUP-SIRENE.tp2~
+	str54  = ~EET_SWO/EET_SWO.tp2~
+	str55  = ~SETUP-TENYATHERMIDOR.tp2~
+//	str56  =  Tiax
+	str57a = ~SETUP-MYMOD.tp2~
+	str57b = ~UzilNPC/SETUP-MYMOD.tp2~
+	str58  = ~VALERIE/VALERIE.tp2~
+	str59  = ~VERRSZA/VERRSZA.tp2~
+//	str60  =  Viconia
+	str61  = ~Vicril/SETUP-VICRIL.tp2~
+	str62  = ~VIENXAY/VIENXAY.tp2~
+	str63  = ~WALAHNAN/WALAHNAN.tp2~
+	str64  = ~white/white.tp2~
+//	str65  =  Xan
+//	str66  =  Xar und Montaron
+//	str67  =  Yeslick
+	str68  = ~Zakrion_BG1/Zakrion_BG1.tp2~
+	str69  = ~INSTALL/Setup-INSTALL.tp2~
+	str70  = ~ZKWSALARIN/SETUP-ZKWSALARIN.tp2~
+//  str71  =  Z-Sonstige (Platzhalter Pfaug und Classicos für die Deterministische)
+//  ------------------------------------
+	strS1  = ~PfaugNPC/setup-PfaugNPC.tp2~	// wird bei künftigen Versionen durch Gruppe 4 ersetzt.	
+	strS2  = ~MAWGULNPC/SETUP-MAWGULNPC.tp2~ // wird bei künftigen Versionen durch Gruppe 4 ersetzt.	
+	strS3  = ~MTSTAIM.tp2~ // wird bei künftigen Versionen durch Gruppe 4 ersetzt.	
+	
+	RET_ARRAY 
+	LoeschregisterBase
+	LoeschregisterMod
+// ------------------------------------------ 
+	BEGIN
+		INCLUDE ~Randomizer/lib/D6no7.tpa~
+//      ----------------------------------------------------------------------------		
+		ACTION_DEFINE_ARRAY personenteilnahmeregisterB38 BEGIN 
+		~Ajantis~
+		~Alora~
+		~Amros~
+		~Areen~
+		~Arkanis~
+		~Aura~
+		~Ayden~
+		~Baeloth~
+		~Brandock~
+		~Branwen~
+		~Breager~
+		~Bristlelick~
+		~Coran~
+		~Desire~
+		~DornIlKhan~
+		~Drake~
+		~DrizztDoSalva~
+		~Ellyran~
+		~Emily~
+		~Faldorn~
+		~Finch~
+		~Gallileo~
+		~Garrick~
+		~Gavin~
+		~GlamsTopFive~
+		~greythedog~
+		~Haiass~
+		~Helga~
+		~Helarine~
+		~Husam~
+		~Indira~
+		~PLACEHOLDIsaac~
+		~Ishlilka~
+		~ISRAISRA~
+		~Kale~
+		~Kivan~
+		~KORAX~
+		~K_Velarin_Au_dayrr~
+		~Margarita~
+		~Mhoram~
+		~K4Morgul~
+		~Minsc-Dynaheir-Edwin~
+		~MotherLost~
+		~MurNeth~
+		~Neera~
+		~Ophysia~
+		~Petsy~
+		~Quayle~
+		~Rasaad~
+		~Recorder~
+		~Safana~
+		~Shar-Teel~
+		~Shuk~
+		~Sirene~
+		~Tamoko~
+		~TenyaThermidor~
+		~Tiax~
+		~Uzil~
+		~Valerie~
+		~VerrrSZAV~
+		~Viconia~
+		~Vicril~
+		~Vienxay~
+		~WALAHNAN~
+		~white~
+		~Xan~
+		~Xar-Montaron~
+		~Yeslick~
+		~Zakrion~
+		~Zarra~
+		~Z-KIT-Alarin~
+		~Z-Sonstige~
+		END
+		ACTION_DEFINE_ARRAY LoeschregisterMod BEGIN END
+		ACTION_DEFINE_ARRAY LoeschregisterBase BEGIN END
+/*
+		KEEP IN MIND --- Never-list:
+					- Brage (Gruppe2)
+					- Corwin/Argent from LCA (BG1EE parts)
+					- Skie Cost of one Girl's soul (Gruppe1)
+					- Anything from Blackheats (likely very involved)
+					- Aerie in BG1 (discussable for later version of Randomizer)
+					- Will of the Wisps (not a real companion)
+*/
+		LAF D6Komma9x
+			RET BegleiterWuerfel = D6Komma9xResult
+		END
+//--------------------------------------------------------------------------------
+//				Würfelfeedback
+//--------------------------------------------------------------------------------
+		ACTION_IF (BegleiterWuerfel <= 9) BEGIN
+			PRINT @501
+		END ELSE BEGIN
+					ACTION_IF (BegleiterWuerfel == 10) BEGIN
+						PRINT @502
+					END ELSE BEGIN
+								ACTION_IF (BegleiterWuerfel == 11) BEGIN
+									PRINT @503
+								END ELSE BEGIN
+										 	ACTION_IF (BegleiterWuerfel == 12) BEGIN
+												PRINT @504
+											END ELSE BEGIN
+													 	ACTION_IF (BegleiterWuerfel == 13) BEGIN
+															PRINT @505
+														END ELSE BEGIN
+																	ACTION_IF (BegleiterWuerfel == 14) BEGIN
+																		PRINT @506
+																	END ELSE BEGIN
+																				ACTION_IF (BegleiterWuerfel >= 15) BEGIN
+																					PRINT @507
+																				END 
+																			 END
+																 END
+													 END
+										 END
+							 END
+				 END
+
+		ACTION_READLN ~scanfENTER~
+		SILENT
+//--------------------------------------------------------------------------------		
+		OUTER_FOR (; num < BegleiterWuerfel; ++num) BEGIN
+			
+			RANDOM_SEED ~NEUER_SEED~
+        	OUTER_SET var_zwischen = RANDOM (1 72)
+			OUTER_SET blog=0
+			OUTER_FOR (a=1; a <= 72; ++a) BEGIN
+				ACTION_IF var_zwischen = a THEN BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~%blog%~) ~DABEI~
+				END
+				OUTER_SET ++blog
+			END
+		END
+//--------------------------------------------------------------------------------
+		INCLUDE ~Randomizer/lib/deterministisch.tpa~
+//--------------------------------------------------------------------------------
+//							Zusweisung
+//--------------------------------------------------------------------------------
+// 		Note: Loop possible, but not desired! 
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(2)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Amros~) 									AND
+				 !MOD_IS_INSTALLED ~%str02%~ ~0~ 										BEGIN
+					LAF Det_Branwen RET_ARRAY personenteilnahmeregisterB38 				END 
+		END
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(3)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Areen~) 									AND
+				 !MOD_IS_INSTALLED ~%str03%~ ~0~ 										BEGIN
+					LAF Det_Branwen RET_ARRAY personenteilnahmeregisterB38 				END
+		END		
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(4)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Arkanis~) 									AND
+				 !MOD_IS_INSTALLED ~%str04%~ ~0~ 										BEGIN
+					LAF Det_Branwen RET_ARRAY personenteilnahmeregisterB38 				END
+		END			
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(5)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Aura~) 									AND
+				 !MOD_IS_INSTALLED ~%str05a%~ ~0~ 										OR
+				 !MOD_IS_INSTALLED ~%str05b%~ ~0~										OR
+				 !MOD_IS_INSTALLED ~%str05c%~ ~0~										BEGIN
+					LAF Det_Branwen RET_ARRAY personenteilnahmeregisterB38 				END
+		END			
+
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(6)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Ayden~) 									AND
+				 !MOD_IS_INSTALLED ~%str06%~ ~0~ 										BEGIN
+					LAF Det_Branwen RET_ARRAY personenteilnahmeregisterB38 				END
+		END			
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(8)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Brandock~) 								AND
+				 !MOD_IS_INSTALLED ~%str08%~ ~0~ 										BEGIN
+					LAF Det_Branwen RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(10)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Breager~) 									AND
+				 !MOD_IS_INSTALLED ~%str10%~ ~0~ 										BEGIN
+				 ACTION_IF (BegleiterWuerfel <= 12) 		  BEGIN
+									OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~14~) ~DABEI~ 
+				 END ELSE 									  BEGIN
+									OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~37~) ~DABEI~
+															  END		
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(11)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Bristlelick~) 								AND
+				 !MOD_IS_INSTALLED ~%str11%~ ~0~ 										BEGIN
+					ACTION_IF (BegleiterWuerfel <= 11)    	   BEGIN
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~14~) ~DABEI~ 	
+					END ELSE 							  	   BEGIN
+							ACTION_IF (BegleiterWuerfel == 14) BEGIN
+									OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~18~) ~DABEI~
+									OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~23~) ~DABEI~
+									OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~27~) ~DABEI~
+							END ELSE 					  		BEGIN
+									OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~12~) ~DABEI~ 
+																END 
+																END
+		END			
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(12)	
+		ACTION_IF ~%var_namest%~ STR_EQ ~Coran~ 										BEGIN
+			// Coran baggert rum xD
+			OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~13~) ~DABEI~		
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(13)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Desire~) 									AND
+				 !MOD_IS_INSTALLED ~%str13%~ ~0~ 										BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~20~) ~DABEI~ 		
+		END			
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(15)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Drake~) 									AND
+				 !MOD_IS_INSTALLED ~%str15%~ ~0~ 										BEGIN
+					LAF Det_Garrick RET_ARRAY personenteilnahmeregisterB38		 		END
+		END		
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(16)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~DrizztDoSalva~) 							AND
+				 !MOD_IS_INSTALLED ~%str16%~ ~0~ 										BEGIN
+					LAF Det_Garrick RET_ARRAY personenteilnahmeregisterB38		 		END
+		END		
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(17)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Ellyran~) 									AND
+				 !MOD_IS_INSTALLED ~%str17a%~ ~0~ 										OR
+				 !MOD_IS_INSTALLED ~%str17b%~ ~0~										BEGIN
+					LAF Det_Garrick RET_ARRAY personenteilnahmeregisterB38		 		END
+		END		
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(18)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Emily~) 									AND
+				 !MOD_IS_INSTALLED ~%str18%~ ~0~ 										BEGIN
+					LAF Det_Garrick RET_ARRAY personenteilnahmeregisterB38		 		END 
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(20)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Finch~) 									AND
+				 !MOD_IS_INSTALLED ~%str20%~ ~0~ 										BEGIN
+					LAF Det_Garrick RET_ARRAY personenteilnahmeregisterB38		 		END 
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(21)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Gallileo~) 								AND
+				 !MOD_IS_INSTALLED ~%str21%~ ~0~ 										BEGIN
+					LAF Det_TIAX_Rulez RET_ARRAY personenteilnahmeregisterB38 			END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(23)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Gavin~) 									AND
+				 !MOD_IS_INSTALLED ~%str23%~ ~0~ 										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(24)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~GlamsTopFive~) 							AND
+				 !MOD_IS_INSTALLED ~%str24%~ ~0~ 										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(25)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~greythedog~) 								AND
+				 !MOD_IS_INSTALLED ~%str25%~ ~0~ 										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(26)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Haiass~) 									AND
+				 !MOD_IS_INSTALLED ~%str26%~ ~0~ 										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(27)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Helga~) 									AND
+				 !MOD_IS_INSTALLED ~%str27%~ ~0~ 										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(28)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Helarine~) 								AND
+				 !MOD_IS_INSTALLED ~%str28%~ ~0~ 										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(29)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Husam~) 									AND
+				 !MOD_IS_INSTALLED ~%str29%~ ~0~ 										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(30)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Indira~) 									AND
+				 !MOD_IS_INSTALLED ~%str30%~ ~0~ 										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(31)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Isaac~) 									AND
+				 !MOD_IS_INSTALLED ~%str31a%~ ~0~ 										OR
+				 !MOD_IS_INSTALLED ~%str31b%~ ~0~										BEGIN
+					LAF Det_Trio RET_ARRAY personenteilnahmeregisterB38 				END
+		END		
+					
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(32)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Ishlilka~) 								AND
+				 !MOD_IS_INSTALLED ~%str32%~ ~0~ 										BEGIN
+					LAF Det_Neera RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(33)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~ISRAISRA~) 								AND
+				 !MOD_IS_INSTALLED ~%str33%~ ~0~ 										BEGIN
+					LAF Det_Neera RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(34)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Kale~) 									AND
+				 !MOD_IS_INSTALLED ~%str34%~ ~0~ 										BEGIN
+					LAF Det_Neera RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(36)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~KORAX~) 									AND
+				 !MOD_IS_INSTALLED ~%str36%~ ~0~ 										BEGIN
+					LAF Det_Neera RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(37)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~K_Velarin_Au_dayrr~) 						AND
+				 !MOD_IS_INSTALLED ~%str37%~ ~0~ 										BEGIN
+					LAF Det_Neera RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(38)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Margarita~) 								AND
+				 !MOD_IS_INSTALLED ~%str38%~ ~0~ 										BEGIN
+					LAF Det_Neera RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(39)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Mhoram~) 									AND
+				 !MOD_IS_INSTALLED ~%str39%~ ~0~ 										BEGIN
+					LAF Det_Neera RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+			
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(40)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~K4Morgul~) 								AND
+				 !MOD_IS_INSTALLED ~%str40%~ ~0~ 										BEGIN
+					LAF Det_Neera RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(42)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~MotherLost~) 								AND
+				 !MOD_IS_INSTALLED ~%str42%~ ~0~ 										BEGIN
+				 	ACTION_IF (BegleiterWuerfel <= 11)    	   BEGIN
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~41~) ~Minsc-Dynaheir-Edwin~
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~24~) ~GlamsTopFive~	
+					END ELSE 							  	   BEGIN
+															   END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(43)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~MurNeth~) 									AND
+				 !MOD_IS_INSTALLED ~%str43%~ ~0~ 										BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~46~) ~DABEI~
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(45)
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Ophysia~) 									AND
+				 !MOD_IS_INSTALLED ~%str45%~ ~0~ 										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(46)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Petsy~) 									AND
+				 !MOD_IS_INSTALLED ~%str46%~ ~0~ 										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(49)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Recorder~) 								AND
+				 !MOD_IS_INSTALLED ~%str49%~ ~0~ 										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(52)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Shuk~) 									AND
+				 !MOD_IS_INSTALLED ~%str52%~ ~0~ 										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(53)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Sirene~) 									AND
+				 !MOD_IS_INSTALLED ~%str53%~ ~0~ 										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(54)	
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Tamoko~) 									AND
+				 !MOD_IS_INSTALLED ~%str54%~ ~0~ 										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(55)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~TenyaThermidor~) 							AND
+				 !MOD_IS_INSTALLED ~%str55%~ ~0~ 										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(57)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Uzil~) 									AND
+				 !MOD_IS_INSTALLED ~%str57a%~ ~0~ 										OR
+				 !MOD_IS_INSTALLED ~%str57b%~ ~0~										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38				END
+		END		
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(58)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Valerie~) 									AND
+				 !MOD_IS_INSTALLED ~%str58%~ ~0~ 										BEGIN
+					LAF Det_Viconia RET_ARRAY personenteilnahmeregisterB38 				END
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(59)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~VerrrSZAV~) 								AND
+				 !MOD_IS_INSTALLED ~%str59%~ ~0~ 										BEGIN
+					LAF Det_XAN RET_ARRAY personenteilnahmeregisterB38					END
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(61)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Vicril~) 									AND
+				 !MOD_IS_INSTALLED ~%str61%~ ~0~ 										BEGIN
+					LAF Det_XAN RET_ARRAY personenteilnahmeregisterB38					END
+		END	
+		
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(62)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Vienxay~) 									AND
+				 !MOD_IS_INSTALLED ~%str62%~ ~0~ 										BEGIN
+					LAF Det_XAN RET_ARRAY personenteilnahmeregisterB38					END
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(63)			
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~WALAHNAN~) 								AND
+				 !MOD_IS_INSTALLED ~%str63%~ ~0~ 										BEGIN
+					LAF Det_XAN RET_ARRAY personenteilnahmeregisterB38					END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(64)			
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~white~) 									AND
+				 !MOD_IS_INSTALLED ~%str64%~ ~0~ 										BEGIN
+					LAF Det_XAN RET_ARRAY personenteilnahmeregisterB38					END
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(68)			
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Zakrion~) 									AND
+				 !MOD_IS_INSTALLED ~%str68%~ ~1000~ 									BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~69~) ~DABEI~
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(69)			
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Zarra~) 									AND
+				 !MOD_IS_INSTALLED ~%str69%~ ~0~ 										BEGIN
+				 	ACTION_IF (BegleiterWuerfel == 13)    	   BEGIN
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~50~) ~DABEI~
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~13~) ~DABEI~
+					END ELSE 							  	   BEGIN
+						ACTION_IF (BegleiterWuerfel > 13)      BEGIN
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~16~) ~DrizztDoSalva~
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~6~) ~Ayden~
+						END ELSE							   BEGIN
+															   END
+															   END
+
+		END	
+
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(70)			
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Z-KIT-Alarin~) 							AND
+				 !MOD_IS_INSTALLED ~%str70%~ ~0~ 										BEGIN
+				 	ACTION_IF (BegleiterWuerfel <= 13)    	   BEGIN
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~71~) ~DABEI~
+					END ELSE 							  	   BEGIN
+						OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~52~) ~Shuk~
+															   END
+		END	
+	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterB38(71)		
+		ACTION_IF NOT(~%var_namest%~ STR_EQ ~Z-Sonstig~) 								AND
+				 !MOD_IS_INSTALLED ~%str71%~ ~0~ 										BEGIN
+					LAF Det_LAST_Pfaug 													END
+		END	
+// 									   -Verteilung-
+		OUTER_SET next_indexB = 0
+		ACTION_PHP_EACH personenteilnahmeregisterB38 AS index => value BEGIN
+				
+			
+			ACTION_IF "%value%" STR_EQ ~Ajantis~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Ajantis"
+			END 		
+			ACTION_IF "%value%" STR_EQ ~Alora~ 											BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Alora"
+			END 			
+			ACTION_IF "%value%" STR_EQ ~Baeloth~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Baeloth"
+			END			
+			ACTION_IF "%value%" STR_EQ ~Branwen~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Branwen"
+			END 		
+			ACTION_IF "%value%" STR_EQ ~Coran~ 											BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Coran"
+			END 	
+			ACTION_IF "%value%" STR_EQ ~DornIlKhan~ 									BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "DornIlKhan"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Faldorn~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Faldorn"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Garrick~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Garrick"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Kivan~ 											BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Kivan"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Minsc-Dynaheir-Edwin~ 							BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Minsc-Dynaheir-Edwin"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Neera~ 											BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Neera"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Quayle~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Quayle"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Rasaad~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Rasaad"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Safana~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Safana"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Shar-Teel~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Shar-Teel"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Tiax~ 											BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Tiax"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Viconia~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Viconia"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Xan~ 											BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Xan"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Xar-Montaron~ 									BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Xar-Montaron"
+			END 
+			ACTION_IF "%value%" STR_EQ ~Yeslick~ 										BEGIN
+				OUTER_SPRINT $LoeschregisterBase("%next_indexB%") "Yeslick"
+			END
+			OUTER_SET next_indexB = next_indexB + 1
+		END
+		
+		OUTER_SET next_indexM = 0 
+		ACTION_PHP_EACH personenteilnahmeregisterB38 AS index => value BEGIN		
+			ACTION_IF "%value%" STR_EQ ~Ajantis~ 									OR
+					  "%value%" STR_EQ ~Alora~ 										OR
+                      "%value%" STR_EQ ~Baeloth~ 									OR
+                      "%value%" STR_EQ ~Branwen~ 									OR
+                      "%value%" STR_EQ ~Coran~ 										OR
+                      "%value%" STR_EQ ~DornIlKhan~ 								OR
+                      "%value%" STR_EQ ~Faldorn~ 									OR
+                      "%value%" STR_EQ ~Garrick~ 									OR
+                      "%value%" STR_EQ ~Kivan~ 										OR
+                      "%value%" STR_EQ ~Minsc-Dynaheir-Edwin~ 						OR
+                      "%value%" STR_EQ ~Neera~ 										OR
+                      "%value%" STR_EQ ~Quayle~ 									OR
+                      "%value%" STR_EQ ~Rasaad~ 									OR
+                      "%value%" STR_EQ ~Safana~ 									OR
+                      "%value%" STR_EQ ~Shar-Teel~ 									OR
+                      "%value%" STR_EQ ~Tiax~ 										OR
+                      "%value%" STR_EQ ~Viconia~ 									OR
+                      "%value%" STR_EQ ~Xar-Montaron~ 								OR
+                      "%value%" STR_EQ ~Yeslick~ 									OR
+					  "%value%" STR_EQ ~~ 											OR
+                      "%value%" STR_EQ ~DABEI~ 										BEGIN	
+// 								programieren wie ein Otto, wegen DeMorgan ):-/
+					END ELSE 														BEGIN	
+							OUTER_SPRINT $LoeschregisterMod("%next_indexM%") "%value%"					
+					END	
+					OUTER_SET next_indexM = next_indexM + 1
+		END
+
+//				Löschungsaufruf - Deletion Call (there it becomes spicy) 
+//               +++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+		INCLUDE ~Randomizer/lib/Loesch.tpa~
+		LAF Loescher END
+	
+//--------------------------------------------------------------------------------
+//										ENDE 
+//--------------------------------------------------------------------------------
+	END
+	
+/*
+		___________________________
+		|		Gatekeeper	      |
+		|Hier startet die Funktion|
+		|(Prüfung der min. Mods	  |
+		|_________________________|
+*/
+DEFINE_ACTION_FUNCTION Advanced_Cast_Gatekeeper
+	
+	INT_VAR
+	minNPC_Mod_Zahl = 3
+	localCheck = 0
+	localCount = 0
+	
+	BEGIN
+	INCLUDE ~Randomizer/lib/GrafzahlHelper.tpa~
+/*	
+	--------------------------
+	Prüfung der installierten Mindestmods
+	--------------------------
+*/				
+		LAF CountCount
+			RET localCheck = varModCheck localCount = varModCount
+		END
+		
+		OUTER_SET localCheck = minNPC_Mod_Zahl
+		ACTION_IF localCount >= localCheck BEGIN
+						LAF Advanced_Cast END 
+		END ELSE BEGIN 
+					FAIL  @105
+				 END				 
+	END
+	

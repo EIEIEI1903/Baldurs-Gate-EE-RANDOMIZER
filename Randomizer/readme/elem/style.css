@@ -1,0 +1,248 @@
+/*
+-----------------------
+Stylesheet der Readme
+-----------------------
+*/
+
+    :root {
+      --blue: #3e2723;
+      --light-blue: #f5e6d3;
+      --yellow: #d4af37;
+      --pink: #8b0000;
+      --green: #2e5a1c;
+      --purple: #4a148c;
+      --gray: #8d6e63;
+      --dark-gray: #2c1810;
+      --white: #faf3e0;
+      --black: #1a120b;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      margin: 0;
+      color: var(--black);
+      background-color: #1a120b;
+      background-image:
+        radial-gradient(#3e2723 1px, transparent 1px),
+        radial-gradient(#2c1810 1px, transparent 1px);
+      background-position: 0 0, 8px 8px;
+      background-size: 16px 16px;
+      font-family: "Times New Roman", Times, serif;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    a {
+      color: #8b0000;
+      text-decoration: underline;
+    }
+
+    a:visited {
+      color: #4a148c;
+    }
+
+    a:hover,
+    a:focus {
+      color: #d4af37;
+      background: var(--dark-gray);
+    }
+
+    .page {
+      width: min(1100px, calc(100% - 24px));
+      margin: 14px auto;
+      background: var(--white);
+      border: 4px ridge var(--gray);
+      box-shadow: 8px 8px 0 rgba(0, 0, 0, 0.5);
+    }
+
+    header {
+      padding: 22px 18px;
+      text-align: center;
+      background:
+        repeating-linear-gradient(
+          45deg,
+          #f5e6d3,
+          #f5e6d3 10px,
+          #d4af37 10px,
+          #d4af37 20px
+        );
+      border-bottom: 4px groove var(--gray);
+    }
+
+    .logo {
+      display: inline-block;
+      margin: 0;
+      color: var(--dark-gray);
+      font-family: Impact, "Arial Black", sans-serif;
+      font-size: clamp(30px, 7vw, 66px);
+      letter-spacing: 2px;
+      line-height: 1;
+      text-shadow:
+        3px 3px 0 var(--white),
+        5px 5px 0 var(--pink);
+    }
+
+    .subtitle {
+      margin: 12px 0 0;
+      color: #8b0000;
+      font-weight: bold;
+      font-size: 18px;
+    }
+
+
+    /*
+      Das Layout basiert auf CSS Grid, sieht aber bewusst wie
+      eine alte Tabellenstruktur aus.
+    */
+    .layout {
+      display: grid;
+      grid-template-columns: 190px minmax(0, 1fr) 190px;
+      gap: 10px;
+      padding: 10px;
+      background: #e8dcc8;
+    }
+
+    nav,
+    aside,
+    main {
+      min-width: 0;
+    }
+
+    main {
+      background: var(--white);
+      border: 3px double var(--dark-gray);
+    }
+
+    .main-inner {
+      padding: 15px;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    h1 {
+      margin-top: 0;
+      color: var(--dark-gray);
+      font-size: clamp(25px, 4vw, 38px);
+    }
+
+    h2 {
+      padding: 4px 8px;
+      color: var(--white);
+      background: var(--purple);
+      border: 2px outset var(--gray);
+      font-size: 22px;
+    }
+
+    h3 {
+      color: #8b0000;
+      font-size: 19px;
+    }
+
+    .hero {
+      display: grid;
+      grid-template-columns: 150px 1fr;
+      gap: 15px;
+      align-items: center;
+      padding: 12px;
+      background: var(--light-blue);
+      border: 3px ridge var(--gray);
+    }
+
+    .placeholder-image {
+      display: grid;
+      min-height: 115px;
+      place-items: center;
+      padding: 8px;
+      color: var(--dark-gray);
+      background: #00008B;
+      border: 3px inset var(--gray);
+      outline: 2px dashed var(--pink);
+      outline-offset: -7px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 13px;
+      font-weight: bold;
+      text-align: center;
+    }
+
+    .notice {
+      margin: 14px 0;
+      padding: 10px;
+      color: #1a3a1a;
+      background: #e8f5e9;
+      border: 2px solid var(--green);
+    }
+
+    footer {
+      padding: 14px;
+      color: var(--white);
+      background: var(--dark-gray);
+      border-top: 4px groove var(--gray);
+      font-size: 14px;
+      text-align: center;
+    }
+
+    footer a {
+      color: #d4af37;
+    }
+
+    hr {
+      height: 3px;
+      border: 0;
+      background: var(--dark-gray);
+    }
+
+    @media (max-width: 850px) {
+      .layout {
+        grid-template-columns: 170px minmax(0, 1fr);
+      }
+
+      aside {
+        grid-column: 1 / -1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+      }
+
+    @media (max-width: 620px) {
+      body {
+        font-size: 16px;
+      }
+
+      .page {
+        width: calc(100% - 10px);
+        margin: 5px auto;
+      }
+
+      .layout {
+        display: block;
+      }
+
+      nav,
+      aside {
+        display: block;
+      }
+
+      .hero,
+      .two-columns {
+        grid-template-columns: 1fr;
+      }
+
+      .placeholder-image {
+        min-height: 90px;
+      }
+
+      .main-inner {
+        padding: 10px;
+      }
+    }

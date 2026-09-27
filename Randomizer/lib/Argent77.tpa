@@ -1,0 +1,164 @@
+/* 
+   Sowohl Argent 77 als auch Pecca haben sich ganz viel Mühe gegeben den originalen Quellcode zu durchforsten, 
+   um die Begegnungsfunktionalität der Beamdog Begleiter rauszufinden, verfolgten aber unterschiedliche Konzepte. Während der
+   eine die Items behalten wollte, wollte der andere eine allumfassende Entfernung. Aus diesem Grunde sind die Mods
+   zueinander nicht kompatibel. Ich entschied mich hier für den vollständigen Ansatz von Argent. Sofern 
+   Peccas tweaks installiert wurden, wertet der Randomizer 3/4 der Beamdog NPCs automatisch als gelöscht aus und führt deren
+   Teil des Codes hier nicht mehr aus.
+   Both Argent 77 and Pecca went to great lengths to comb through the original source code
+   to figure out the encounter functionality of the Beamdog companions, but they took different approaches. While
+   one wanted to keep the items, the other wanted to remove them entirely. For this reason, the mods
+   are not compatible with each other. I decided to go with Argent’s comprehensive approach here. Provided
+   Pecca’s tweaks have been installed, the randomizer automatically marks 3/4 of the Beamdog NPCs as deleted and no longer executes
+   that portion of the code.
+*/
+
+
+//		NEERA
+
+DEFINE_ACTION_FUNCTION DELETE_NEERA_BG1
+BEGIN
+    ACTION_IF (GAME_IS ~bgee~) BEGIN
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~AR3300.BCS~) BEGIN
+            COPY_EXISTING ~AR3300.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~HasDLC(.+)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~NEERA.BCS~) BEGIN
+            COPY_EXISTING ~NEERA.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*Global("NEERA_MEETING",.+)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+    END
+END
+
+//		DORN IL Khan
+
+DEFINE_ACTION_FUNCTION DELETE_DORN
+BEGIN
+
+    // BG1EE
+    ACTION_IF (GAME_IS ~bgee~) BEGIN
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~AR2301.BCS~) BEGIN
+            COPY_EXISTING ~AR2301.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*HasDLC(.+)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~AR4800.BCS~) BEGIN
+            COPY_EXISTING ~AR4800.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*HasDLC(.+)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~OH1000.BCS~) BEGIN
+            COPY_EXISTING ~OH1000.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*HasDLC(.+)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+        // Siege of the Dragonspear
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~BD2000.BCS~) BEGIN
+            COPY_EXISTING ~BD2000.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*Global("BD_DORN_SPAWN","BD2000",0)~
+                        ~False()~
+
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*Global("BD_DORN_MAP_NOTE","BD2000",0)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+    END
+
+END
+
+//		Rassad yn Bashir
+
+DEFINE_ACTION_FUNCTION DELETE_RASAAD
+BEGIN
+    ACTION_IF (GAME_IS ~bgee~) BEGIN
+
+        // BG1EE: Rasaads - Nashkel Scene
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~AR4800.BCS~) BEGIN
+            COPY_EXISTING ~AR4800.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*Global("RASAAD_SPAWN_STOP","GLOBAL",0)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+        // Siege of the Dragonspear
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~BD7000.BCS~) BEGIN
+            COPY_EXISTING ~BD7000.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*Global("bd_rasaad_spawn","bd7000",0)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~BD7100.BCS~) BEGIN
+            COPY_EXISTING ~BD7100.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*Global("bd_move_rasaad","bd7100",0)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+    END
+END
+
+//			Baeloth Barrityl 
+
+DEFINE_ACTION_FUNCTION DELETE_BAELOTH_BG1
+BEGIN
+    ACTION_IF (GAME_IS ~bgee~) BEGIN
+
+        ACTION_IF (FILE_EXISTS_IN_GAME ~AR2900.BCS~) BEGIN
+            COPY_EXISTING ~AR2900.BCS~ ~override~
+                DECOMPILE_AND_PATCH BEGIN
+                    REPLACE_TEXTUALLY CASE_INSENSITIVE
+                        ~^[%TAB% ]*Global("BAINVI","GLOBAL",0)~
+                        ~False()~
+                END
+            BUT_ONLY
+        END
+
+    END
+END

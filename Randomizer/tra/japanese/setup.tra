@@ -1,0 +1,17 @@
+// UI und Interface (Hauptmenü)
+@100  = ~ランダマイザ~
+@200  = ~Basic_Cast ランダマイザを開始~
+@300  = ~Advanced_Cast ランダマイザを開始~
+@400  = ~Base_Cast_Remover_Toolを開始~
+
+// Error und Message Handling der Anwendung
+@101  = ~エラー - ゲームはBaldurs_Gate_1_EE、SoDまたはBaldurs_Gate_2_EEでなければなりません！~
+@102  = ~エラー: -SoD Merge Argent77がありません- Yeslickを削除できませんでした。彼は引き続き存在します！~  
+@103  = ~Argent77 DLC Mergerが見つかりました。パッチ処理を開始します...~
+@104  = ~エラー - コンパニオンMODを少なくとも6つインストールする必要があります！まずNPC MODをインストールしてください。これはシングルプレイヤー用MODではありません！~
+@105  = ~エラー - コンパニオンMODを少なくとも3つインストールする必要があります！まずNPC MODをインストールしてください。これはシングルプレイヤー用MODではありません！~
+@106  = ~エラー – モッド: «Mercenaries of the Sword Coast» が検出されました！このモッドは偶然、ランダムライザーと互換性がありません。両方とも Baldur's Gate の空間的に限定された宇宙内で異なるゲームデザインコンセプトに従っているためです。~
+
+
+
+

@@ -1,0 +1,15 @@
+// UI und Interface (Hauptmenü)
+@100  = ~Randomizer~
+@200  = ~הפעלת Basic_Cast Randomizer~
+@300  = ~הפעלת Advanced_Cast Randomizer~
+@400  = ~הפעלת Base_Cast_Remover_Tool~
+
+// Error und Message Handling der Anwendung
+@101  = ~שגיאה - המשחק חייב להיות Baldurs_Gate_1_EE, SoD או Baldurs_Gate_2_EE!~
+@102  = ~שגיאה: -SoD Merge Argent77 חסר- לא ניתן היה להסיר את Yeslick. הוא ימשיך להיות נוכח!~  
+@103  = ~Argent77 DLC Merger נמצא. מתחיל בתהליך התיקון...~
+@104  = ~שגיאה - יש להתקין לפחות 6 מודים של שותפים! התקן תחילה מודים של NPC. זהו לא מוד לשחקן יחיד!~
+@105  = ~שגיאה - יש להתקין לפחות 3 מודים של שותפים! התקן תחילה מודים של NPC. זהו לא מוד לשחקן יחיד!~
+@106  = ~שגיאה – מוד: «Mercenaries of the Sword Coast» זוהה! מוד זה במקרה אינו תואם עם ה-Randomizer, שכן שניהם עוקבים אחר קונספטים שונים של עיצוב משחק בתוך היקום המוגבל במרחב של Baldur's Gate.~
+
+

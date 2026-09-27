@@ -1,0 +1,9 @@
+Baldurs Gate EE- Randomizer Mod Version 0.1.0
+----------------------------------------------------------------------------------------
+
+# Changelog
+
+## [0.1.0] - 2026-09-20
+
+### Added
+- Release of the first Version (0.1.0) of Bartman Muggletree Randomizer Mod 

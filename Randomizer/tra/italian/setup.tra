@@ -1,0 +1,15 @@
+// UI und Interface (Hauptmenü)
+@100  = ~Randomizelli~
+@200  = ~Avvia Basic_Cast Randomizelli~
+@300  = ~Avvia Advanced_Cast Randomizelli~
+@400  = ~Avvia Base_Cast_Remover_Tool~
+
+// Error und Message Handling der Anwendung
+@101  = ~ERRORE - Il gioco deve essere Baldurs_Gate_1_EE, SoD o Baldurs_Gate_2_EE!~
+@102  = ~ERRORE: -SoD Merge Argent77 mancante- Non è stato possibile rimuovere Yeslick. Sarà ancora presente!~  
+@103  = ~Argent77 DLC Merger trovato. Avvio del processo di correzione...~
+@104  = ~ERRORE - Devono essere installate almeno 6 mod per compagni! Installa prima le mod NPC. Questa non è una mod per giocatore singolo!~
+@105  = ~ERRORE - Devono essere installate almeno 3 mod per compagni! Installa prima le mod NPC. Questa non è una mod per giocatore singolo!~
+@106  = ~ERRORE – Mod: «Mercenaries of the Sword Coast» rilevata! Questa mod è casualmente incompatibile con il Randomizelli, poiché entrambi seguono concetti di progettazione di gioco diversi all'interno dell'universo spazialmente limitato di Baldur's Gate.~
+
+

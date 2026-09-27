@@ -1,0 +1,47 @@
+DEFINE_ACTION_FUNCTION D6Komma9x
+// Fast ein D7 Würfel... (*w*) nur eben gezinkt
+//------------------------------
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	INT_VAR
+	Wuerfelseite1					= 9
+    Wuerfelseite2 					= 10
+	Wuerfelseite3 					= 11
+	Wuerfelseite4					= 12
+	Wuerfelseite5					= 13
+	Wuerfelseite6					= 14
+	irgendsoeineabgeschliffeneEcke  = 15
+	
+	D6Komma9xResult					= 0
+    RET
+        D6Komma9xResult
+// ------------------------------------------
+
+    BEGIN
+	
+		RANDOM_SEED ~NEUER_SEED~
+        OUTER_SET diceSix = RANDOM(1 29)
+		
+        ACTION_IF diceSix <= 2 BEGIN
+            OUTER_SET D6Komma9xResult = Wuerfelseite1
+        END ELSE
+        ACTION_IF diceSix <= 6 BEGIN
+            OUTER_SET D6Komma9xResult = Wuerfelseite2
+        END ELSE
+        ACTION_IF diceSix <= 14 BEGIN
+            OUTER_SET D6Komma9xResult = Wuerfelseite3
+        END ELSE
+        ACTION_IF diceSix <= 22 BEGIN
+            OUTER_SET D6Komma9xResult = Wuerfelseite4
+        END ELSE
+        ACTION_IF diceSix <= 26 BEGIN
+            OUTER_SET D6Komma9xResult = Wuerfelseite5
+        END ELSE
+        ACTION_IF diceSix <= 28 BEGIN
+            OUTER_SET D6Komma9xResult = Wuerfelseite6
+        END ELSE BEGIN
+            OUTER_SET D6Komma9xResult = irgendsoeineabgeschliffeneEcke
+        END
+
+    END

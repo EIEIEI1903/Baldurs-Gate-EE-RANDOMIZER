@@ -1,0 +1,296 @@
+INCLUDE ~Randomizer/lib/functions.tpa~
+DEFINE_ACTION_FUNCTION Loescher
+
+BEGIN
+
+/*
+	Löschung der Mod-Charaktere
+   ------------------------------------------
+*/	
+//		
+		SILENT
+		ACTION_PHP_EACH LoeschregisterMod AS indexM => valueM 					BEGIN
+			ACTION_IF "%valueM%" STRING_EQUAL ~Amros~ 							BEGIN
+				LAF DELETE_MOD_Amrosssss END
+			SILENT				
+			END			
+			ACTION_IF "%valueM%" STRING_EQUAL ~Areen~ 							BEGIN
+				LAF DELETE_MOD_wmAREEN END			 
+			SILENT
+			END			
+			ACTION_IF "%valueM%" STRING_EQUAL ~Arkanis~ 						BEGIN
+				LAF DELETE_MOD_ArkanisSoD END			 
+			SILENT
+			END			
+			ACTION_IF "%valueM%" STRING_EQUAL ~Aura~ 							BEGIN
+				LAF DELETE_MOD_AuraGlimmershine END	 
+			SILENT
+			END			
+			ACTION_IF "%valueM%" STRING_EQUAL ~Ayden~ 							BEGIN
+				LAF DELETE_MOD_AydenWarlock END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Brandock~ 						BEGIN
+				LAF DELETE_MOD_Brandock  END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Breager~ 						BEGIN
+				 LAF DELETE_MOD_AscBreager END	  
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Bristlelick~ 					BEGIN
+				LAF DELETE_MOD_Bristlelick END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Desire~ 							BEGIN
+				LAF DELETE_MOD_DesireeNotnickweilbetaxD END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Drake~ 							BEGIN
+				LAF DELETE_MOD_DrakeCaulfield END 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~DrizztDoSalva~ 					BEGIN
+				LAF DELETE_MOD_Drizzt_Saga END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Ellyran~ 						BEGIN
+				LAF DELETE_MOD_ELLYRAN END 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Emily~ 							BEGIN
+				LAF DELETE_MOD_Emily END 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Finch~ 							BEGIN
+				LAF DELETE_MOD_Finch END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Gallileo~ 						BEGIN
+				LAF DELETE_MOD_Galileo END	 
+			SILENT
+			END							
+			ACTION_IF "%valueM%" STRING_EQUAL ~Gavin~ 							BEGIN
+				LAF DELETE_MOD_Gavin END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~GlamsTopFive~ 					BEGIN
+				LAF DELETE_MOD_Glams-Pack END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~greythedog~ 						BEGIN
+				 LAF DELETE_MOD_DogGrey END	  
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Haiass~ 							BEGIN
+				LAF DELETE_MOD_Haiass END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Helga~ 							BEGIN
+				LAF DELETE_MOD_Helga END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Helarine~ 						BEGIN
+				LAF DELETE_MOD_Helarine END 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Husam~ 							BEGIN
+				LAF DELETE_MOD_Husam END 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Indira~ 							BEGIN
+				LAF DELETE_MOD_Indira END 
+			SILENT
+			END	
+//			
+//			TODO: ISAAC hier inkludieren
+//			
+			ACTION_IF "%valueM%" STRING_EQUAL ~Ishlilka~ 						BEGIN
+				LAF DELETE_MOD_Ishlilka END	 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~ISRAISRA~ 						BEGIN
+				LAF DELETE_MOD_IsraGhadir END 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Kale~ 							BEGIN
+				LAF DELETE_MOD_Kale END
+			SILENT
+			END							
+			ACTION_IF "%valueM%" STRING_EQUAL ~KORAX~ 							BEGIN
+				LAF DELETE_MOD_vincentravenpraesentiertKORAX END 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~K_Velarin_Au_dayrr~ 				BEGIN
+				LAF DELETE_MOD_KVelarinAudayrr END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Margarita~ 						BEGIN
+				LAF DELETE_MOD_Margarita END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Mhoram~ 							BEGIN
+				LAF DELETE_MOD_MHORAM END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~K4Morgul~ 						BEGIN
+				LAF DELETE_MOD_Morg END 
+			SILENT
+			END							
+			ACTION_IF "%valueM%" STRING_EQUAL ~MotherLost~ 						BEGIN
+				LAF DELETE_MOD_SoD_MotherLost END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~MurNeth~ 						BEGIN
+				LAF DELETE_MOD_MurNeth END
+			SILENT
+			END						
+			ACTION_IF "%valueM%" STRING_EQUAL ~Ophysia~ 						BEGIN
+				LAF DELETE_MOD_Ophysia_Lorines END 
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Petsy~ 							BEGIN
+				LAF DELETE_MOD_Petsy_Chattertone END
+			SILENT
+			END								
+			ACTION_IF "%valueM%" STRING_EQUAL ~Recorder~ 						BEGIN
+				LAF DELETE_MOD_Recorder END
+			SILENT
+			END								
+			ACTION_IF "%valueM%" STRING_EQUAL ~Shuk~ 							BEGIN
+				LAF DELETE_MOD_Shuk-Goblin END
+			SILENT
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Sirene~ 							BEGIN
+				LAF DELETE_MOD_Sirene END
+			SILENT
+			END					
+			ACTION_IF "%valueM%" STRING_EQUAL ~Tamoko~ 							BEGIN
+				LAF DELETE_MOD_Tamoko_SoC END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~TenyaThermidor~ 					BEGIN
+				LAF DELETE_MOD_Tenya_Thermidor END
+			SILENT
+			END							
+			ACTION_IF "%valueM%" STRING_EQUAL ~Uzil~ 							BEGIN
+				LAF DELETE_MOD_UZIL END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Valerie~ 						BEGIN
+				LAF DELETE_MOD_Valerie_Lysander END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~VerrrSZAV~ 						BEGIN
+				LAF DELETE_MOD_VerrSza END
+			SILENT
+			END							
+			ACTION_IF "%valueM%" STRING_EQUAL ~Vicril~ 							BEGIN
+				LAF DELETE_MOD_VICRIL END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Vienxay~ 						BEGIN
+				LAF DELETE_MOD_Vienxay END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~WALAHNAN~ 						BEGIN
+				LAF DELETE_MOD_Walahnan END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~white~ 							BEGIN
+				LAF DELETE_MOD_White END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Zakrion~ 						BEGIN
+				LAF DELETE_MOD_Zakrion_Dessani END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Zarra~ 							BEGIN
+				LAF DELETE_MOD_Caina-et-Zarra END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Z-KIT-Alarin~ 					BEGIN
+				LAF DELETE_MOD_Alarin END
+			SILENT
+			END				
+			ACTION_IF "%valueM%" STRING_EQUAL ~Z-Sonstige~ 						BEGIN
+				LAF DELETE_MOD_PFAUG END
+				LAF DELETE_MOD_CLASSIC_mawgul END
+				LAF DELETE_MOD_CLASSIC_mtstaim END	 
+			SILENT
+			END				
+			
+		END	
+
+// ------------------------------------------ 
+/*
+	Löschung der Base-Charaktere
+   ------------------------------------------
+*/	
+		SILENT
+		ACTION_PHP_EACH LoeschregisterBase AS indexB => valueB BEGIN
+		
+			ACTION_IF "%valueM%" STRING_EQUAL ~Ajantis~ 						BEGIN
+				LAF DELETE_Ajantis END	
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Alora~ 							BEGIN
+				LAF DELETE_Alora END
+			END		
+			ACTION_IF "%valueM%" STRING_EQUAL ~Baeloth~ 						BEGIN
+				LAF DELETE_BEAM_Baeloth_Barrityl END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Branwen~ 						BEGIN
+				LAF DELETE_UPD_Branwen END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Coran~ 							BEGIN
+				LAF DELETE_Coran END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~DornIlKhan~ 						BEGIN
+				LAF DELETE_BEAM_Dorn END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Faldorn~ 						BEGIN
+				LAF DELETE_Faldorn END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Garrick~ 						BEGIN
+				LAF DELETE_Garrick END	
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Kivan~ 							BEGIN
+				LAF DELETE_Kivan END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Minsc-Dynaheir-Edwin~ 			BEGIN
+				LAF DELETE_Minsc-Dynaheir-Edwin END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Neera~ 							BEGIN
+				LAF DELETE_BEAM_Neera END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Quayle~ 							BEGIN
+				LAF DELETE_Quayle END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Rasaad~ 							BEGIN
+				LAF DELETE_BEAM_Rasaadyn END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Safana~ 							BEGIN
+				LAF DELETE_Safana END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Shar-Teel~ 						BEGIN
+				LAF DELETE_Shar-Teel_Dos END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Tiax~ 							BEGIN
+				LAF DELETE_Tiax END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Viconia~ 						BEGIN
+				LAF DELETE_Viconia END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Xan~ 							BEGIN
+				LAF DELETE_Xan END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Xar-Montaron~ 					BEGIN
+				LAF DELETE_Xar-Montaron END
+			END	
+			ACTION_IF "%valueM%" STRING_EQUAL ~Yeslick~ 						BEGIN
+				LAF DELETE_Yeslick END			
+			END		
+
+		END
+		
+END								

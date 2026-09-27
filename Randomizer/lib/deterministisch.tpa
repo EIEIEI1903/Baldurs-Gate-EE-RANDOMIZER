@@ -1,0 +1,197 @@
+DEFINE_ACTION_FUNCTION Det_Branwen
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	RET_ARRAY personenteilnahmeregisterB38
+// ------------------------------------------
+BEGIN
+	ACTION_IF MOD_IS_INSTALLED ~%str30%~ ~0~ BEGIN
+		OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~30~) ~DABEI~
+	END ELSE BEGIN
+				ACTION_IF MOD_IS_INSTALLED ~%str26%~ ~0~ BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~26~) ~DABEI~
+				END ELSE BEGIN
+							ACTION_IF MOD_IS_INSTALLED ~%str20%~ ~0~ BEGIN
+								OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~20~) ~DABEI~
+							END ELSE BEGIN
+										ACTION_IF MOD_IS_INSTALLED ~%str17%~ ~0~ BEGIN
+											OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~17~) ~DABEI~
+										END ELSE BEGIN
+													ACTION_IF MOD_IS_INSTALLED ~%str13%~ ~0~ BEGIN
+														OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~13~) ~DABEI~
+													END ELSE BEGIN
+																OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~9~) ~DABEI~
+															 END
+												 END
+									 END
+						 END
+			 END
+
+END								
+DEFINE_ACTION_FUNCTION Det_Garrick
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	RET_ARRAY personenteilnahmeregisterB38
+// ------------------------------------------
+BEGIN
+	ACTION_IF MOD_IS_INSTALLED ~%str55%~ ~0~ BEGIN
+		OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~55~) ~DABEI~
+	END ELSE BEGIN
+				ACTION_IF MOD_IS_INSTALLED ~%str30%~ ~0~ BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~30~) ~DABEI~
+				END ELSE BEGIN
+							ACTION_IF MOD_IS_INSTALLED ~%str29%~ ~0~ BEGIN
+								OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~29~) ~DABEI~
+							END ELSE BEGIN
+										ACTION_IF MOD_IS_INSTALLED ~%str28%~ ~0~ BEGIN
+											OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~28~) ~DABEI~
+										END ELSE BEGIN
+													ACTION_IF MOD_IS_INSTALLED ~%str25%~ ~0~ BEGIN
+														OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~25~) ~DABEI~
+													END ELSE BEGIN
+																OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~22~) ~DABEI~
+															 END
+												 END
+									 END
+						 END
+			 END
+
+END
+DEFINE_ACTION_FUNCTION Det_TIAX_Rulez
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	RET_ARRAY personenteilnahmeregisterB38
+// ------------------------------------------
+BEGIN
+	ACTION_IF MOD_IS_INSTALLED ~%str68%~ ~0~ BEGIN
+		OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~68~) ~DABEI~
+	END ELSE BEGIN
+				ACTION_IF MOD_IS_INSTALLED ~%str36%~ ~0~ BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~36~) ~DABEI~
+				END ELSE BEGIN
+							OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~56~) ~DABEI~
+						 END
+			 END
+
+END										
+DEFINE_ACTION_FUNCTION Det_Trio
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	RET_ARRAY personenteilnahmeregisterB38
+// ------------------------------------------
+BEGIN
+
+	ACTION_IF MOD_IS_INSTALLED ~%str64%~ ~0~ BEGIN
+		OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~64~) ~DABEI~
+	END ELSE BEGIN
+				ACTION_IF MOD_IS_INSTALLED ~%str55%~ ~0~ BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~55~) ~DABEI~
+				END ELSE BEGIN
+							ACTION_IF MOD_IS_INSTALLED ~%str54%~ ~0~ BEGIN
+								OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~54~) ~DABEI~
+							END ELSE BEGIN
+										OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~41~) ~DABEI~
+									 END
+						 END
+			 END
+
+END	
+DEFINE_ACTION_FUNCTION Det_Neera
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	RET_ARRAY personenteilnahmeregisterB38
+// ------------------------------------------
+BEGIN
+	ACTION_IF MOD_IS_INSTALLED ~%str55%~ ~0~ BEGIN
+		OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~55~) ~DABEI~
+	END ELSE BEGIN	
+				ACTION_IF MOD_IS_INSTALLED ~%str45%~ ~0~ BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~45~) ~DABEI~
+				END ELSE BEGIN
+							OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~44~) ~DABEI~
+						 END
+			 END
+END		
+DEFINE_ACTION_FUNCTION Det_Viconia
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	RET_ARRAY personenteilnahmeregisterB38
+// ------------------------------------------
+BEGIN
+
+	ACTION_IF MOD_IS_INSTALLED ~%str64%~ ~0~ BEGIN
+		OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~x~) ~DABEI~
+	END ELSE BEGIN
+				ACTION_IF MOD_IS_INSTALLED ~%str68%~ ~0~ BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~68~) ~DABEI~
+				END ELSE BEGIN
+							ACTION_IF MOD_IS_INSTALLED ~%str69%~ ~0~ BEGIN
+								OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~69~) ~DABEI~
+							END ELSE BEGIN
+										OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~60~) ~DABEI~
+									 END
+						 END
+			 END								
+END
+DEFINE_ACTION_FUNCTION Det_XAN
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	RET_ARRAY personenteilnahmeregisterB38
+// ------------------------------------------
+BEGIN
+
+	ACTION_IF MOD_IS_INSTALLED ~%str70%~ ~0~ BEGIN
+		OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~67~) ~DABEI~ //Yeslick dabei wenn Alarin installiert
+	END ELSE BEGIN
+				OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~65~) ~DABEI~	
+			 END			
+END
+ 
+
+/* 
+   Det_LAST_Pfaug Start:
+   
+   In dieser besonderen Kette befinden sich nur 
+   Companions die nicht üblicherweise zu EE Version
+   gehören oder nicht mehr verfügbar sind.
+   
+   Für den seltenen Fall, dass diese Gruppe gewürfelt
+   wird und nicht vorhanden ist, also durchläuft, wird
+   bei einem trefferlosen Durchgang der das Feld als -1
+   zur aktuellen Gruppe ausgewertet und entfällt.
+
+   Diese Gruppe wird in späteren versionen einmal 
+   durch Figuren der Gruppe 4 ergänzt.
+*/
+DEFINE_ACTION_FUNCTION Det_LAST_Pfaug
+//		Letzte Gruppe 
+//		
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------
+	RET_ARRAY personenteilnahmeregisterB38
+// ------------------------------------------
+BEGIN
+
+	ACTION_IF MOD_IS_INSTALLED ~%strS1%~ ~0~ BEGIN
+		OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~12~) ~DABEI~
+	END ELSE BEGIN
+				ACTION_IF MOD_IS_INSTALLED ~%strS2%~ ~0~ BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~50~) ~DABEI~
+				END ELSE BEGIN
+							ACTION_IF MOD_IS_INSTALLED ~%strS3%~ ~0~ BEGIN
+								OUTER_SPRINT $ EVAL personenteilnahmeregisterB38(~9~) ~DABEI~
+							END ELSE BEGIN
+											//  -> LEER~									
+									 END
+						 END							
+			 END 
+END
+// Det_LAST_Pfaug - Ende!
+// ----------------------

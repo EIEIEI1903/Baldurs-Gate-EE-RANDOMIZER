@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     Hai ottenuto un 1 con il dado per la tua partita. In base al risultato del lancio dei compagni
+             puoi valutare approssimativamente quanti compagni incontrerai e
+             adattare di conseguenza il tuo stile di gioco. In alcuni casi, il
+             processo di randomizzazione può richiedere parecchio tempo. Ti preghiamo di attendere
+             fino a quel momento. Non è possibile modificare il risultato a posteriori!
+             Premi ora INVIO per avviare il processo di randomizzazione.~
+@502 = ~2/6: 	     Hai ottenuto un 2 con il dado per la tua partita. In base al risultato del lancio dei compagni
+             puoi valutare approssimativamente quanti compagni incontrerai e
+             adattare di conseguenza il tuo stile di gioco. In alcuni casi, il
+             processo di randomizzazione può richiedere parecchio tempo. Attendi
+             per il momento. Non è possibile modificare il risultato in un secondo momento!
+             Premi ora INVIO per avviare il processo di randomizzazione.~
+@503 = ~3/6: 	     Hai ottenuto un 3 per la tua partita. In base al lancio dei compagni
+	     puoi valutare approssimativamente quanti compagni incontrerai e
+             adattare di conseguenza il tuo stile di gioco. In alcuni casi, il
+             processo di randomizzazione può richiedere parecchio tempo. Ti preghiamo di attendere
+             fino al termine. Non è possibile modificare il risultato in un secondo momento!
+	     Premi ora INVIO per avviare il processo di randomizzazione.~
+@504 = ~4/6: 	     Hai ottenuto un 4 con il dado per la tua partita. In base al risultato del lancio dei compagni
+             puoi valutare approssimativamente quanti compagni incontrerai e
+             adattare di conseguenza il tuo stile di gioco. In alcuni casi, il
+             processo di randomizzazione può richiedere parecchio tempo. Ti preghiamo di attendere
+             fino al termine. Non è possibile modificare il risultato a posteriori!
+             Premi ora INVIO per avviare il processo di randomizzazione.~
+@505 = ~5/6: 	     Hai ottenuto un 5 con il dado per la tua partita. In base al lancio dei compagni
+	     puoi valutare approssimativamente quanti compagni incontrerai e
+             adattare di conseguenza il tuo stile di gioco. In alcuni casi, il
+             processo di randomizzazione può richiedere parecchio tempo. Ti preghiamo di attendere
+             per tutto il tempo necessario. Non è possibile modificare il risultato in un secondo momento!
+	     Premi ora INVIO per avviare il processo di randomizzazione.~
+@506 = ~6/6: 	     Hai ottenuto un 6 con il dado per la tua partita. In base al risultato del lancio dei compagni
+	     puoi valutare approssimativamente quanti compagni incontrerai e
+             adattare di conseguenza il tuo stile di gioco. In alcuni casi, il
+             processo di randomizzazione può richiedere parecchio tempo. Ti preghiamo di attendere
+             fino al termine. Non è possibile modificare il risultato a posteriori!
+             Premi ora INVIO per avviare il processo di randomizzazione.~
+@507 = ~7/6: 	     Oh, WOW! Hai tirato un 7 con un dado a sei facce. Com’è
+             possibile?! Probabilmente hai usato una pergamena della fortuna... ;-)
+             Grazie al tiro dei compagni puoi valutare approssimativamente quanti
+             compagni incontrerai e adattare di conseguenza il tuo stile di gioco.
+	     In alcuni casi, il processo di randomizzazione potrebbe richiedere parecchio tempo.
+             Ti preghiamo di attendere. Non è possibile modificare il risultato a posteriori!
+             Premi ora INVIO per avviare il processo di randomizzazione.~

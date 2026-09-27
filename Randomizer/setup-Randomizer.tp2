@@ -1,0 +1,181 @@
+BACKUP ~Randomizer/backup~
+SUPPORT ~www.beamdogforums.de/url/forumpostr~
+README ~RANDOMIZER/Readme/Readme-%LANGUAGE%.html~
+VERSION ~v0.1~
+	
+COMPONENTINFO ~|██████╗  █████╗ ███╗   ██╗██████╗  ██████╗ ███╗   ███╗██╗███████╗██████╗ |~
+COMPONENTINFO ~|██╔══██╗██╔══██╗████╗  ██║██╔══██╗██╔═══██╗████╗ ████║██║╚══███╔╝██╔══██╗|~
+COMPONENTINFO ~|██████╔╝███████║██╔██╗ ██║██║  ██║██║   ██║██╔████╔██║██║  ███╔╝ ██████╔╝|~
+COMPONENTINFO ~|██╔══██╗██╔══██║██║╚██╗██║██║  ██║██║   ██║██║╚██╔╝██║██║ ███╔╝  ██╔══██╗|~
+COMPONENTINFO ~|██║  ██║██║  ██║██║ ╚████║██████╔╝╚██████╔╝██║ ╚═╝ ██║██║███████╗██║  ██║|~
+COMPONENTINFO ~|╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝╚═════╝  ╚═════╝ ╚═╝     ╚═╝╚═╝╚══════╝╚═╝  ╚═╝|~
+COMPONENTINFO ~~
+COMPONENTINFO ~ ------------------------------------------------------------------------- ~
+COMPONENTINFO ~ ATTENTION: This is less a mod, but more an additional die/game            ~
+COMPONENTINFO ~            component! It must ALWAYS be installed as the  last            ~
+COMPONENTINFO ~            mod and may only be executed once, because it  sets    		  ~
+COMPONENTINFO ~            the world state! Read the Readme!               								  ~
+COMPONENTINFO ~ ------------------------------------------------------------------------- ~
+
+// LANGUAGE Definition Start
+// -------------------
+AUTO_TRA ~Randomizer/tra/autotra/%s~
+
+ALWAYS 
+	ACTION_IF 	    GAME_IS ~eet~ 			OR 	
+					GAME_IS ~bg1~ 			OR 
+					GAME_IS ~bg2~ 			OR
+					GAME_IS ~tob~ 			OR
+					GAME_IS ~soa~ 			OR
+					GAME_IS ~tutu~ 			OR
+					GAME_IS ~tutu_totsc~ 	OR 
+					GAME_IS ~iwd1~ 			OR 
+					GAME_IS ~iwdee~ 		OR 
+					GAME_IS ~pst~ 			OR 
+					GAME_IS ~pstee~ 		OR 
+					GAME_IS ~iwd2~ 			OR 
+					GAME_IS ~iwd_in_bg2~ 	OR 
+					GAME_IS ~ca~ 			OR 
+					GAME_IS ~totlm~ 		OR
+					GAME_IS ~how~             	 					
+	BEGIN 
+		 			FAIL  @101
+	END
+	
+	ACTION_IF 	    MOD_IS_INSTALLED ~mercenaries/Setup-Mercenaries.tp2~ 0 
+	BEGIN 
+		 			FAIL  @106				
+	END 
+END
+	
+LANGUAGE ~English~
+         ~english~
+         ~Randomizer/tra/english/setup.tra~
+		 ~Randomizer/tra/english/dialog.tra~
+		 ~Randomizer/tra/english/randocarlrissian.tra~
+
+LANGUAGE ~Spanish~
+         ~spanish~
+         ~Randomizer/tra/spanish/setup.tra~
+		 ~Randomizer/tra/spanish/prompts.tra~
+		 ~Randomizer/tra/spanish/dialog.tra~
+		 ~Randomizer/tra/spanish/randocarlrissian.tra~
+
+LANGUAGE ~Simplified Chinese~
+         ~schinese~
+         ~Randomizer/tra/schinese/setup.tra~
+		 ~Randomizer/tra/schinese/prompts.tra~
+		 ~Randomizer/tra/schinese/dialog.tra~
+		 ~Randomizer/tra/schinese/randocarlrissian.tra~
+
+LANGUAGE ~French~
+         ~french~
+         ~Randomizer/tra/french/setup.tra~
+		 ~Randomizer/tra/french/prompts.tra~
+		 ~Randomizer/tra/french/dialog.tra~
+		 ~Randomizer/tra/french/randocarlrissian.tra~
+
+LANGUAGE ~Japanese~
+         ~japanese~
+         ~Randomizer/tra/japanese/setup.tra~
+		 ~Randomizer/tra/japanese/prompts.tra~
+		 ~Randomizer/tra/japanese/dialog.tra~
+		 ~Randomizer/tra/japanese/randocarlrissian.tra~
+
+LANGUAGE ~Portuguese~        
+		 ~portuguese~
+         ~Randomizer/tra/portuguese/setup.tra~
+		 ~Randomizer/tra/portuguese/prompts.tra~
+		 ~Randomizer/tra/portuguese/dialog.tra~
+		 ~Randomizer/tra/portuguese/randocarlrissian.tra~
+
+LANGUAGE ~German~
+         ~german~
+         ~Randomizer/tra/german/setup.tra~
+		 ~Randomizer/tra/german/prompts.tra~
+		 ~Randomizer/tra/german/dialog.tra~
+		 ~Randomizer/tra/german/randocarlrissian.tra~
+
+LANGUAGE ~Italian~
+         ~italian~
+         ~Randomizer/tra/italian/setup.tra~
+		 ~Randomizer/tra/italian/prompts.tra~
+		 ~Randomizer/tra/italian/dialog.tra~
+		 ~Randomizer/tra/italian/randocarlrissian.tra~
+
+LANGUAGE ~Russian~
+         ~russian~
+         ~Randomizer/tra/russian/setup.tra~
+		 ~Randomizer/tra/russian/prompts.tra~
+		 ~Randomizer/tra/russian/dialog.tra~
+		 ~Randomizer/tra/russian/randocarlrissian.tra~
+
+LANGUAGE ~Polski~
+         ~polish~
+         ~Randomizer/tra/polish/setup.tra~
+		 ~Randomizer/tra/polish/prompts.tra~
+		 ~Randomizer/tra/polish/dialog.tra~
+		 ~Randomizer/tra/polish/randocarlrissian.tra~
+
+LANGUAGE ~Czech~
+         ~czech~
+         ~Randomizer/tra/czech/setup.tra~
+		 ~Randomizer/tra/czech/prompts.tra~
+		 ~Randomizer/tra/czech/dialog.tra~
+		 ~Randomizer/tra/czech/randocarlrissian.tra~
+
+LANGUAGE ~Korean~
+         ~korean~
+         ~Randomizer/tra/korean/setup.tra~
+		 ~Randomizer/tra/korean/prompts.tra~
+		 ~Randomizer/tra/korean/dialog.tra~
+		 ~Randomizer/tra/korean/randocarlrissian.tra~
+
+LANGUAGE ~Turkish~
+         ~turkish~
+         ~Randomizer/tra/turkish/setup.tra~
+		 ~Randomizer/tra/turkish/prompts.tra~
+		 ~Randomizer/tra/turkish/dialog.tra~
+		 ~Randomizer/tra/turkish/randocarlrissian.tra~
+		 
+
+LANGUAGE ~Hungarian~
+         ~hungarian~
+         ~Randomizer/tra/hungarian/setup.tra~
+		 ~Randomizer/tra/hungarian/prompts.tra~
+		 ~Randomizer/tra/hungarian/dialog.tra~
+		 ~Randomizer/tra/hungarian/randocarlrissian.tra~
+		 
+LANGUAGE ~Ukrainian~
+         ~ukrainian~
+         ~Randomizer/tra/ukrainian/setup.tra~
+		 ~Randomizer/tra/ukrainian/prompts.tra~
+		 ~Randomizer/tra/ukrainian/dialog.tra~
+		 ~Randomizer/tra/ukrainian/randocarlrissian.tra~
+// ------------------------
+// LANGUAGE Definition Ende
+
+
+/*	
+	--------------------------
+	----------Main----------
+	--------------------------
+*/
+	BEGIN @200 //strt BCR
+		SUBCOMPONENT @100
+			INCLUDE ~Randomizer/lib/flamingoMagic.tpa~
+			ACTION_IF GAME_IS ~bgee~ THEN BEGIN  		//temporary essential for v.0.1.0 - later removed
+				LAF basicCast END
+			END
+	BEGIN @300 //strt ACR
+		SUBCOMPONENT @100 
+			INCLUDE ~Randomizer/lib/turtleMagic.tpa~
+			ACTION_IF GAME_IS ~bgee~ THEN BEGIN 		//temporary essential for v.0.1.0 - later removed
+				LAF Advanced_Cast_Gatekeeper END
+			END
+	BEGIN @400 //strt OMCR
+		SUBCOMPONENT @100
+			INCLUDE ~Randomizer/lib/MainCastRemoveTool.tpa~
+			ACTION_IF GAME_IS ~bgee~ THEN BEGIN 		//temporary essential for v.0.1.0 - later removed
+				LAF MainCastRemoveTool END
+			END

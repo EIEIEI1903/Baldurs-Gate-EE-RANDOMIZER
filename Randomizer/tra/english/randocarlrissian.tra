@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     You have rolled a 1 for your run. Based on a companion roll, you can roughly gauge how 
+	     many companions you will encounter and adjust your playstyle accordingly. Under certain 
+	     circumstances, the randomization process may take considerable time. Please wait as long 
+	     as needed. No subsequent change to your result is possible! 
+	     Press ENTER now to start the randomization process.~
+
+@502 = ~2/6: 	     You have rolled a 2 for your run. Based on a companion roll, you can roughly gauge how 
+	     many companions you will encounter and adjust your playstyle accordingly. Under certain 
+	     circumstances, the randomization process may take considerable time. Please wait as long 
+	     as needed. No subsequent change to your result is possible! 
+	     Press ENTER now to start the randomization process.~
+
+@503 = ~3/6: 	     You have rolled a 3 for your run. Based on a companion roll, you can roughly gauge how 
+	     many companions you will encounter and adjust your playstyle accordingly. Under certain 
+	     circumstances, the randomization process may take considerable time. Please wait as long 
+	     as needed. No subsequent change to your result is possible! 
+	     Press ENTER now to start the randomization process.~
+
+@504 = ~4/6: 	     You have rolled a 4 for your run. Based on a companion roll, you can roughly gauge how 
+	     many companions you will encounter and adjust your playstyle accordingly. Under certain 
+	     circumstances, the randomization process may take considerable time. Please wait as long 
+	     as needed. No subsequent change to your result is possible! 
+	     Press ENTER now to start the randomization process.~
+
+@505 = ~5/6: 	     You have rolled a 5 for your run. Based on a companion roll, you can roughly gauge how 
+	     many companions you will encounter and adjust your playstyle accordingly. Under certain 
+	     circumstances, the randomization process may take considerable time. Please wait as long 
+	     as needed. No subsequent change to your result is possible! 
+             Press ENTER now to start the randomization process.~
+
+@506 = ~6/6: 	     You have rolled a 6 for your run. Based on a companion roll, you can roughly gauge how 
+	     many companions you will encounter and adjust your playstyle accordingly. Under certain 
+	     circumstances, the randomization process may take considerable time. Please wait as long 
+	     as needed. No subsequent change to your result is possible! 
+	     Press ENTER now to start the randomization process.~
+
+@507 = ~7/6: 	     Oh, WOW! You have rolled a 7 with a six-sided die. How can that be?! You must have used 
+	     a scroll of luck... ;-) 
+	     Based on a companion roll, you can roughly gauge how many companions you will encounter 
+	     and adjust your playstyle accordingly. Under certain circumstances, the randomization 
+	     process may take considerable time. Please wait as long as needed. No subsequent change 
+	     to your result is possible! 
+	     Press ENTER now to start the randomization process.~

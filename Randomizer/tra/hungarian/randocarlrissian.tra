@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	     A futásodhoz 1-est dobtál. A társak dobása alapján
+             hozzávetőlegesen felmérheted, hány társ fog veled találkozni, és
+             ennek megfelelően módosíthatod a játékstílusodat. Előfordulhat, hogy a
+             véletlenszerűsítési folyamat elég sok időt vesz igénybe. Kérlek, várj
+             addig. Az eredmény utólagos módosítása nem lehetséges!
+             Most nyomd meg az ENTER gombot a véletlenszerűsítési folyamat elindításához.~
+@502 = ~2/6: 	     A futásodhoz 2-est dobtál. A társdobás alapján
+             hozzávetőlegesen felmérheted, hány társoddal fogsz találkozni, és
+             ennek megfelelően alakíthatod a játékstílusodat. Bizonyos körülmények között a
+             véletlenszerűsítési folyamat elég sok időt vehet igénybe. Kérjük, várj
+             addig. Az eredmény utólagos módosítása nem lehetséges!
+             Most nyomd meg az ENTER gombot a véletlenszerűsítési folyamat elindításához.~
+@503 = ~3/6: 	     A futásodhoz 3-ast dobtál. A társdobás alapján
+	     körülbelül felmérheted, hány társ fog veled találkozni, és
+             ennek megfelelően alakíthatod a játékstílusodat. Előfordulhat, hogy a
+             véletlenszerűsítési folyamat elég sok időt vesz igénybe. Kérlek, várj
+             addig. Az eredményt utólag nem lehet módosítani!
+             Most nyomd meg az ENTER gombot a véletlenszerűsítési folyamat elindításához.~
+@504 = ~4/6: 	     A futásodhoz 4-est dobtál. A társak dobása alapján
+             hozzávetőlegesen felmérheted, hány társ fog veled találkozni, és
+             ennek megfelelően módosíthatod a játékstílusodat. Előfordulhat, hogy a
+             véletlenszerűsítési folyamat elég sok időt vesz igénybe. Kérlek, várj
+             addig. Az eredmény utólagos módosítása nem lehetséges!
+             Most nyomd meg az ENTER gombot a véletlenszerűsítési folyamat elindításához.~
+@505 = ~5/6: 	     A futásodhoz 5-öst dobtál. A társdobás alapján
+             hozzávetőlegesen felmérheted, hány társoddal fogsz találkozni, és
+             ennek megfelelően alakíthatod a játékstílusodat. Bizonyos körülmények között a
+             véletlenszerűsítési folyamat elég sok időt vehet igénybe. Kérjük, várj
+             addig. Az eredmény utólagos módosítása nem lehetséges!
+             Most nyomd meg az ENTER gombot a véletlenszerűsítési folyamat elindításához.~
+@506 = ~6/6: 	     A futásodhoz 6-ost dobtál. A társdobás alapján
+	     körülbelül felmérheted, hány társra fogsz találni, és
+             ennek megfelelően alakíthatod a játékstílusodat. Előfordulhat, hogy a
+             véletlenszerűsítési folyamat elég sok időt vesz igénybe. Kérlek, várj
+             addig. Az eredményt utólag nem lehet módosítani!
+             Most nyomd meg az ENTER gombot a véletlenszerűsítési folyamat elindításához.~
+@507 = ~7/6: 	     Ó, WOW! Egy hatoldalú kockával 7-est dobtál. Hogy lehet
+             ez?! Biztosan használtál egy szerencse-tekercset... ;-)
+             A társakra vonatkozó kockadobás alapján nagyjából felmérheted, hány
+             társra fogsz rábukkanni, és ennek megfelelően alakíthatod a játékstílusodat.
+	     Előfordulhat, hogy a véletlenszerűsítési folyamat elég sok időt vesz igénybe.
+             Kérlek, várj addig! Az eredmény utólagos módosítása nem lehetséges!
+             Most nyomd meg az ENTER gombot a véletlenszerűsítési folyamat elindításához.~

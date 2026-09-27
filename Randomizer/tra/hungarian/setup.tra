@@ -1,0 +1,15 @@
+// UI und Interface (Hauptmenü)
+@100  = ~Randomizer~
+@200  = ~Basic_Cast Randomizer indítása~
+@300  = ~Advanced_Cast Randomizer indítása~
+@400  = ~Base_Cast_Remover_Tool indítása~
+
+// Error und Message Handling der Anwendung
+@101  = ~HIBA - A játéknak Baldurs_Gate_1_EE, SoD vagy Baldurs_Gate_2_EE játéknak kell lennie!~
+@102  = ~HIBA: -SoD Merge Argent77 hiányzik- Yeslick eltávolítását nem sikerült végrehajtani. Továbbra is jelen lesz!~  
+@103  = ~Argent77 DLC Merger megtalálva. Javítási folyamat indítása...~
+@104  = ~HIBA – Legalább 6 társ-modot kell telepíteni! Először telepíts NPC-modokat. Ez nem egyjátékos mod!~
+@105  = ~HIBA – Legalább 3 társ-modot kell telepíteni! Először telepíts NPC-modokat. Ez nem egyjátékos mod!~
+@106  = ~HIBA – Mod: «Mercenaries of the Sword Coast» észlelve! Ez a mód véletlenül inkompatibilis a Randomizerrel, mivel mindkettő különböző játéktervezési koncepciókat követ a Baldur's Gate térben korlátozott világán belül.~
+
+

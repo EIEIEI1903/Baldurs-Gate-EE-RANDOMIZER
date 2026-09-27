@@ -1,0 +1,121 @@
+@-1000= "Mod %TP2_FILE_NAME% obsahuje"
+
+@-1001= "několik volitelných komponent.
+Pro úsporu času můžete globálně zvolit, co se s nimi má stát, místo abyste museli odpovídat u každé jednotlivé komponenty.
+"
+
+@-1002= "Co se má stát se všemi komponentami, které JEŠTĚ NEJSOU nainstalované?
+[I]Nainstalovat, [S]Přeskočit, [A]Zeptat se u každé jednotlivě? "
+
+@-1003= "Co se má stát se všemi komponentami, které JIŽ JSOU nainstalované?
+[R]Přeinstalovat, [U]Odinstalovat, [S]Přeskočit, [A]Zeptat se u každé jednotlivě? "
+
+@-1004= "Zálohujte prosím soubor:"
+
+@-1005= "a vyhledejte pomoc na:"
+
+@-1006= "Nainstalovat komponentu ["
+
+@-1007= "] ?
+[R]Přeinstalovat, [N]Nic neměnit, [U]Odinstalovat nebo [Q]Ukončit? "
+
+@-1008= "] ?
+[I]Nainstalovat, [N]Neinstalovat nebo [Q]Ukončit? "
+
+@-1009= "Zadejte část názvu modulu: "
+
+@-1010= "Přeinstalace komponenty ["
+
+@-1011= "] "
+
+@-1012= "Přeinstalace s jazykem"
+
+@-1013= "Nejprve odstraňuji starou instalaci ["
+
+@-1014= "] ..."
+
+@-1015= "STARÁ INSTALACE BYLA ÚSPĚŠNĚ ODSTRANĚNA"
+
+@-1016= "Instalace"
+
+@-1017= "CHYBA při instalaci ["
+
+@-1018= "], návrat do předchozího stavu"
+
+@-1019= "ÚSPĚŠNĚ NAINSTALOVÁNO "
+
+@-1020= "Přeskočeno"
+
+@-1021= "Odstraňování ["
+
+@-1022= "] (komponenta #"
+
+@-1023= ")"
+
+@-1024= "ÚSPĚŠNĚ ODSTRANĚNO ["
+
+@-1025= "] ?
+[R]Přeinstalovat, [N]Nic neměnit, [U]Odinstalovat, [Q]Ukončit nebo vybrat:"
+
+@-1026= "] ?
+[N]Ne, [Q]Ukončit nebo vybrat:"
+
+@-1027= " (aktuálně nainstalováno="
+
+@-1028= "Chcete zobrazit komponenty ["
+
+@-1029= "] ?
+[Y]Ano, [N]Ne? "
+
+@-1030= "] ?
+vyberte:"
+
+@-1031= "] ?
+[R]Přeinstalovat, [N]Nic neměnit, [U]Odinstalovat, [Q]Ukončit nebo vybrat:"
+
+@-1032= "NENAINSTALOVÁNO KVŮLI CHYBÁM"
+
+@-1033= "NAINSTALOVÁNO S VAROVÁNÍMI "
+
+@-1034= "Chcete zobrazit soubor Readme? [Y]Ano [N]Ne"
+
+@-1035= "Použití jazyka"
+
+@-1036= "Skupina ["
+
+@-1037= "] přeskočena, protože její předpoklady nejsou splněny."
+
+@-1038= "[A]Zeptat se u každé komponenty, [S]přeskočit všechny nebo zvolit předdefinovaný výběr:"
+
+@-1039= "[A]Zeptat se u každé komponenty, [R]přeinstalovat aktuální konfiguraci, [U]odinstalovat všechny, [S]přeskočit všechny nebo zvolit předdefinovaný výběr:"
+
+@-1040= "
+Vyberte prosím jazyk, ve kterém chcete hrát.
+Pokud budete chtít později hrát v jiném jazyce, budete muset změnit soubor weidu.conf a znovu nainstalovat své mody.
+"
+
+@-1041= "Čeština"
+@-1042= "Němčina"
+@-1043= "Angličtina"
+@-1044= "Španělština"
+@-1045= "Francouzština"
+@-1046= "Italština"
+@-1047= "Polština"
+@-1048= "Portugalština"
+@-1049= "Turečtina"
+@-1050= "Japonština"
+@-1051= "Korejština"
+@-1052= "Zjednodušená čínština"
+@-1053= "Ruština"
+@-1054= "Ukrajinština"
+
+@-1060= "
+Tato hra je dostupná v několika jazycích, ale WeiDU neví, který jazyk hry byl použit při instalaci tohoto modu.
+
+Uveďte prosím, který jazyk hry byl použit při instalaci tohoto modu. Vaše volba bude používána až do ukončení WeiDU, ale nebude uložena.
+"
+
+@-1061= "
+Použití"
+
+@-1062= " a "

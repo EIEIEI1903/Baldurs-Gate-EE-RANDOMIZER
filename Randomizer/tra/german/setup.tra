@@ -1,0 +1,16 @@
+// UI und Interface (Hauptmenü)
+@100  = ~Randomizer~
+@200  = ~Start Basic_Cast Randomizer~
+@300  = ~Start Advanced_Cast Randomizer~
+@400  = ~Start Base_Cast_Remover_Tool~
+
+// Error und Message Handling der Anwendung
+@101  = ~ERROR - Spiel muss Baldurs_Gate_1_EE, SoD oder Baldurs_Gate_2_EE sein!~
+@102  = ~FEHLER: -SoD Merge Argent77 fehlt- Yeslicks Entfernung konnte nicht durchgeführt werden. Er wird weiterhin vorhanden sein!~  
+@103  = ~Argent77 DLC Merger gefunden. Starte Patchvorgang...~
+@104  = ~ERROR - Es müssen mindestens 6 Begleiter-Mods installiert sein! Installiere zuerst NPC Mods. Dies ist keine Einzelspielermod!~ 
+@105  = ~ERROR - Es müssen mindestens 3 Begleiter-Mods installiert sein! Installiere zuerst NPC Mods. Dies ist keine Einzelspielermod!~
+@106  = ~ERROR – Mod: «Mercenaries of the Sword Coast» entdeckt! Diese eine Mod ist nun ausgerechnet nicht kompatibel mit dem Randomizer, da beide unterschiedliche Spiel Designs in der räumlich begrenzten Welt von Baldurs Gate verfolgen.~
+
+
+

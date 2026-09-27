@@ -1,0 +1,46 @@
+DEFINE_ACTION_FUNCTION MainCastRemoveTool	
+	
+	INT_VAR
+	minNPC_Mod_Zahl = 6	
+	localCount = 0
+	localCheck = 0
+	
+	BEGIN
+	SILENT
+	INCLUDE ~Randomizer/lib/functions.tpa~
+	INCLUDE ~Randomizer/lib/GrafzahlHelper.tpa~
+/*	
+	--------------------------
+	Prüfung der installierten Mindestmods
+	--------------------------
+*/	
+		LAF CountCount
+			RET localCheck = varModCheck localCount = varModCount
+		END
+		OUTER_SET localCheck = minNPC_Mod_Zahl
+		ACTION_IF localCount >= localCheck THEN BEGIN 
+			LAF DELETE_Ajantis END
+			LAF DELETE_Alora END
+			LAF DELETE_BEAM_Baeloth_Barrityl END
+			LAF DELETE_UPD_Branwen END
+			LAF DELETE_Coran END
+			LAF DELETE_BEAM_Dorn END
+			LAF DELETE_Faldorn END
+			LAF DELETE_Garrick END
+			LAF DELETE_Kivan END
+			LAF DELETE_Minsc-Dynaheir-Edwin END
+			LAF DELETE_BEAM_Neera END
+			LAF DELETE_Quayle END
+			LAF DELETE_BEAM_Rasaadyn END
+			LAF DELETE_Safana END
+			LAF DELETE_Shar-Teel_Dos END
+			LAF DELETE_Tiax END
+			LAF DELETE_Viconia END
+			LAF DELETE_Xan END
+			LAF DELETE_Xar-Montaron END
+			LAF DELETE_Yeslick END
+			END ELSE BEGIN
+					FAIL  @104
+			END
+
+	END

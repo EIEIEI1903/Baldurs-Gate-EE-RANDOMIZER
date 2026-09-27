@@ -1,0 +1,16 @@
+// UI und Interface (Hauptmenü)
+@100  = ~무작위 생성기~
+@200  = ~Basic_Cast 무작위 생성기 시작~
+@300  = ~Advanced_Cast 무작위 생성기 시작~
+@400  = ~Base_Cast_Remover_Tool 시작~
+
+// Error und Message Handling der Anwendung
+@101  = ~오류 - 게임은 Baldurs_Gate_1_EE, SoD 또는 Baldurs_Gate_2_EE여야 합니다!~
+@102  = ~오류: -SoD Merge Argent77이 없습니다- Yeslick을 제거할 수 없습니다. 그는 계속 존재하게 됩니다!~  
+@103  = ~Argent77 DLC Merger를 찾았습니다. 패치 프로세스를 시작합니다...~
+@104  = ~오류 - 최소 6개의 동료 모드가 설치되어 있어야 합니다! 먼저 NPC 모드를 설치하세요. 이 모드는 싱글플레이어용이 아닙니다!~
+@105  = ~오류 - 최소 3개의 동료 모드가 설치되어 있어야 합니다! 먼저 NPC 모드를 설치하세요. 이 모드는 싱글플레이어용이 아닙니다!~
+@106  = ~오류 – 모드: «Mercenaries of the Sword Coast» 감지됨! 이 모드는 우연히도 랜덤라이저와 호환되지 않습니다. 두 개 모두 Baldur's Gate 의 공간적으로 제한된 우주 내에서 다른 게임 디자인 개념을 따르기 때문입니다.~
+
+
+

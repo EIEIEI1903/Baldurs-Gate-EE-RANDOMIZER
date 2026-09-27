@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	      Tu as obtenu un 1 au dé pour ta partie. Grâce au jet de dé des compagnons,
+              tu peux estimer approximativement le nombre de compagnons que tu vas rencontrer et
+              adapter ton style de jeu en conséquence. Dans certains cas, le
+              processus de randomisation peut prendre un certain temps. Merci de patienter
+              pendant ce temps. Il n’est pas possible de modifier ton résultat a posteriori !
+              Appuie maintenant sur ENTRÉE pour lancer le processus de randomisation.~
+@502 = ~2/6: 	      Tu as obtenu un 2 au dé pour ta partie. Grâce à un jet de compagnons,
+              tu peux estimer approximativement le nombre de compagnons que tu vas rencontrer et
+              adapter ta stratégie en conséquence. Dans certains cas, le
+              processus de randomisation peut prendre beaucoup de temps. Veuillez patienter
+              pendant ce temps. Il n’est pas possible de modifier votre résultat par la suite !
+              Appuyez maintenant sur ENTRÉE pour lancer le processus de randomisation.~
+@503 = ~3/6: 	      Vous avez obtenu un 3 au dé pour votre partie. En fonction d’un jet de compagnons,
+	      tu peux estimer approximativement le nombre de compagnons que tu vas rencontrer et
+              adapter ta stratégie en conséquence. Dans certains cas, le
+              processus de randomisation peut prendre beaucoup de temps. Merci de patienter
+              pendant ce temps. Il n’est pas possible de modifier ton résultat a posteriori !
+              Appuie maintenant sur ENTRÉE pour lancer le processus de randomisation.~
+@504 = ~4/6: 	      Tu as obtenu un 4 au dé pour ta partie. Grâce au jet de dé des compagnons,
+              tu peux estimer approximativement le nombre de compagnons que tu vas rencontrer et
+              adapter ton style de jeu en conséquence. Dans certains cas, le
+              processus de randomisation peut prendre un certain temps. Merci de patienter
+              pendant ce temps. Il n'est pas possible de modifier ton résultat a posteriori !
+              Appuie maintenant sur ENTRÉE pour lancer le processus de randomisation.~
+@505 = ~5/6: 	      Tu as obtenu un 5 au dé pour ta partie. Grâce à un jet de compagnons,
+              tu peux estimer approximativement le nombre de compagnons que tu vas rencontrer et
+              adapter ta stratégie en conséquence. Dans certains cas, le
+              processus de randomisation peut prendre beaucoup de temps. Veuillez patienter
+              pendant ce temps. Il n’est pas possible de modifier votre résultat par la suite !
+              Appuyez maintenant sur ENTRÉE pour lancer le processus de randomisation.~
+@506 = ~6/6: 	      Vous avez obtenu un 6 au dé pour votre partie. En fonction d’un jet de compagnons,
+	      tu peux estimer approximativement le nombre de compagnons que tu vas rencontrer et
+              adapter ta stratégie en conséquence. Dans certains cas, le
+              processus de randomisation peut prendre beaucoup de temps. Merci de patienter
+              pendant ce temps. Il n’est pas possible de modifier ton résultat a posteriori !
+              Appuie maintenant sur ENTRÉE pour lancer le processus de randomisation.~
+@507 = ~7/6: 	      Oh, WOW ! Tu as obtenu un 7 en lançant un dé à six faces. Comment est-ce
+              possible ?! Tu as sans doute utilisé un parchemin de chance... ;-)
+              Grâce à un jet de compagnons, tu peux estimer approximativement le nombre de
+              compagnons que tu vas rencontrer et adapter ton style de jeu en conséquence.
+	      Dans certains cas, le processus de randomisation peut prendre un certain temps.
+              Merci de patienter. Il n'est pas possible de modifier ton résultat a posteriori !
+              Appuie maintenant sur ENTRÉE pour lancer le processus de randomisation.~

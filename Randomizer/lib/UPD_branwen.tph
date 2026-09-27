@@ -1,0 +1,28 @@
+DEFINE_PATCH_FUNCTION UPD_branwen
+// 		TODO: GGf. DialogRefs ändern(optional?), den ganzen Jahrmarkt abreißen -> Map Changes
+BEGIN
+
+			READ_LONG  0x54 actor_offset
+			READ_SHORT 0x58 actor_count
+
+			FOR (i = 0; i < actor_count; ++i) BEGIN
+
+				SET current_offset = actor_offset + (i * 0x110)
+
+				READ_ASCII current_offset actor_name (32) NULL
+
+				PATCH_IF ("%actor_name%" STRING_EQUAL_CASE ~Zeke~) BEGIN
+
+						LPF fj_are_structure
+						INT_VAR
+						fj_delete_mode = i
+						STR_VAR
+						fj_structure_type = ~actor~
+						END
+						
+					SET i = actor_count
+				END
+
+			END
+
+END

@@ -1,0 +1,16 @@
+// UI und Interface (Hauptmenü)
+@100  = ~Le Randomzier~
+@200  = ~Lancer le Basic_Cast Randomzier~
+@300  = ~Lancer le Advanced_Cast Randomzier~
+@400  = ~Lancer le Base_Cast_Remover_Tool~
+
+// Error und Message Handling der Anwendung
+@101  = ~ERREUR - Le jeu doit être Baldurs_Gate_1_EE, SoD ou Baldurs_Gate_2_EE!~
+@102  = ~ERREUR : -SoD Merge Argent77 manquant- La suppression de Yeslick n'a pas pu être effectuée. Il sera toujours présent !~  
+@103  = ~Argent77 DLC Merger trouvé. Démarrage du processus de correction...~
+@104  = ~ERREUR - Au moins 6 mods de compagnons doivent être installés ! Installez d'abord des mods de PNJ. Ce n'est pas un mod solo !~
+@105  = ~ERREUR - Au moins 3 mods de compagnons doivent être installés ! Installez d'abord des mods de PNJ. Ce n'est pas un mod solo !~
+@106  = ~ERREUR – Mod : «Mercenaries of the Sword Coast» détecté! Ce mod-là est, comme par hasard, incompatible avec le Randomzier, car les deux suivent des conceptions de jeu différentes au sein de l'univers spatialement limité de Baldur's Gate.~
+
+
+

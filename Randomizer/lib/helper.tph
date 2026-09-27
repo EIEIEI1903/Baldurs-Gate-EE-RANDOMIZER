@@ -1,0 +1,44 @@
+DEFINE_PATCH_FUNCTION DELETE_GAM_NPC
+    STR_VAR
+        npc_resref = ~~
+BEGIN
+
+    READ_LONG 0x30 npc_offset
+    READ_LONG 0x34 npc_count
+
+    FOR (i = 0; i < npc_count; ++i) BEGIN
+
+        SET current_offset = npc_offset + (i * 0x160)
+
+        READ_ASCII (current_offset + 0x0C) current_resref (8) NULL
+
+        PATCH_IF ("%current_resref%" STRING_EQUAL_CASE ~%npc_resref%~) BEGIN
+
+            READ_LONG 0x20 party_offset
+            READ_LONG 0x28 inventory_offset
+            READ_LONG 0x50 journal_offset
+
+            DELETE_BYTES current_offset 0x160
+
+            SET npc_count -= 1
+            WRITE_LONG 0x34 npc_count
+
+            PATCH_IF party_offset > current_offset BEGIN
+                WRITE_LONG 0x20 (party_offset - 0x160)
+            END
+
+            PATCH_IF inventory_offset > current_offset BEGIN
+                WRITE_LONG 0x28 (inventory_offset - 0x160)
+            END
+
+            PATCH_IF journal_offset > current_offset BEGIN
+                WRITE_LONG 0x50 (journal_offset - 0x160)
+            END
+
+            SET i = npc_count
+
+        END
+
+    END
+
+END

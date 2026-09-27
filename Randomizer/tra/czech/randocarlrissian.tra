@@ -1,0 +1,44 @@
+// Würfelbecher des Randomizers
+@501 = ~1/6: 	      V tomto pokusu jsi hodil 1. Na základě hodu společníků
+              si můžeš přibližně odhadnout, kolik společníků potkáš, a
+              podle toho přizpůsobit svůj herní styl. V některých případech může
+              proces náhodného výběru trvat poměrně dlouho. Prosím, počkej
+              tak dlouho. Dodatečná změna tvého výsledku není možná!
+              Nyní stiskni klávesu ENTER, abys spustil proces generování náhodných výsledků.~
+@502 = ~2/6: 	      V tomto průchodu jsi hodil 2. Na základě hodu na společníky
+              si můžeš přibližně odhadnout, kolik společníků potkáš, a
+              podle toho přizpůsobit svůj herní styl. V některých případech může
+              proces náhodného generování trvat poměrně dlouho. Prosím, počkej
+              tak dlouho. Pozdější změna tvého výsledku není možná!
+              Stiskni nyní klávesu ENTER, abys spustil proces náhodného generování.~
+@503 = ~3/6: 	      Pro svůj průchod jsi hodil 3. Na základě hodu společníků
+	      můžeš přibližně odhadnout, kolik společníků potkáš, a
+              podle toho přizpůsobit svůj styl hry. V některých případech může
+              proces náhodného generování trvat poměrně dlouho. Prosím, počkej
+              tak dlouho. Pozdější změna tvého výsledku není možná!
+              Stiskni nyní klávesu ENTER, abys spustil proces náhodného generování.~
+@504 = ~4/6: 	      Pro svůj průchod jsi hodil 4. Na základě hodu společníků
+              si můžeš přibližně odhadnout, kolik společníků potkáš, a
+              podle toho přizpůsobit svůj styl hry. V některých případech může
+              proces náhodného generování trvat poměrně dlouho. Prosím, počkej
+              tak dlouho. Dodatečná změna tvého výsledku není možná!
+              Nyní stiskni klávesu ENTER, abys spustil proces generování náhodných výsledků.~
+@505 = ~5/6: 	      V tomto průchodu jsi hodil 5. Na základě hodu společníků
+              si můžeš přibližně odhadnout, kolik společníků potkáš, a
+              podle toho přizpůsobit svůj herní styl. V některých případech může
+              proces náhodného generování trvat poměrně dlouho. Prosím, počkej
+              tak dlouho. Pozdější změna tvého výsledku není možná!
+              Stiskni nyní klávesu ENTER, abys spustil proces náhodného generování.~
+@506 = ~6/6: 	      Pro svůj průchod jsi hodil 6. Na základě hodu společníků
+	      můžeš přibližně odhadnout, kolik společníků potkáš, a
+              podle toho přizpůsobit svůj styl hry. V některých případech může
+              proces náhodného generování trvat poměrně dlouho. Prosím, počkej
+              tak dlouho. Pozdější změna tvého výsledku není možná!
+              Stiskni nyní klávesu ENTER, abys spustil proces náhodného generování.~
+@507 = ~7/6: 	      Páni, WOW! Hodil jsi sedmičku na šestistranné kostce. Jak je
+              to možné?! Asi jsi použil svitek štěstí... ;-)
+              Na základě hodu společníků si můžeš přibližně odhadnout, kolik
+              společníků potkáš, a podle toho přizpůsobit svůj styl hry.
+	      V některých případech může proces generování náhodných výsledků trvat poměrně dlouho.
+              Prosím, počkej, dokud se proces nedokončí. Dodatečná změna tvého výsledku není možná!
+              Nyní stiskni klávesu ENTER, abys spustil proces generování náhodných výsledků.~

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="elem/style.css">
+  <title>READme</title>
+ 
+
+</head>
+
+<body>
+  <div class="page">
+
+
+    <header>
+      <div class="logo">Randomizer</div>
+      <p class="subtitle">
+        Kości do gry „Baldur’s Gate” – wersja: 0.1
+      </p>
+    </header>
+
+    <div class="layout">
+      <nav aria-label="Hauptnavigation">
+      </nav>
+
+      <main id="start">
+        <div class="main-inner">
+          <h1>Zainstaluj</h1>
+
+          <div class="hero">
+            <div class="placeholder-image">
+				<img src="elem/Wuerfel.png"></img>
+            </div>
+            <div>
+              <p>
+              Nie jest to mod w tradycyjnym sensie, a raczej dodatkowa kostka zaprojektowana w celu zwiększenia wartości powtórnego grania.
+              To bardzo potężne narzędzie, które częściowo podważa klasyczny system Weidu.
+              </p>
+              <p>
+              Z tego powodu ten „mod” należy zainstalować jako ostatni!
+			  Jest to absolutnie niezbędne, aby zapewnić prawidłowe działanie gry.
+              Należy również wziąć pod uwagę inne czynniki!
+              </p>
+            </div>
+          </div>
+
+          <div class="notice">
+            <strong>Notice:</strong>
+				Zdecydowanie zalecamy korzystanie z modyfikacji A7-DlcMerger autorstwa Argent77 w połączeniu z tym modem, ponieważ jest to jedyny sposób na zapewnienie pełnej funkcjonalności!
+          </div>
+          <section id="Allgemein">
+            <h2>Jak to działa?</h2>
+
+            <p>
+				Ten mod sprawia, że spotkanie z towarzyszami-NPC podczas podróży staje się opcjonalne.
+                Oznacza to, że to, czy postacie te istnieją i czy uda ci się je spotkać, zależy teraz od szczęścia w rzucie kostką.
+                Dzięki temu towarzystwo nabiera większego znaczenia, ponieważ twoi partnerzy stają się cenni,
+                skoro możesz liczyć tylko na kilku z nich.
+
+				Filozofia stojąca za tym rozwiązaniem jest bardziej zgodna z seriami „Mass Effect” i „Dragon Age” firmy BioWare!
+                Od teraz nie będziesz spotykać towarzyszy na każdym kroku! Nie! Zawsze będziesz grać tylko z określoną liczbą postaci!
+				Dostępne są trzy tryby:
+            </p>
+            <p>
+                <Strong>Tryb 1 – Podstawowy generator losowy składu drużyny:</Strong> W tym trybie skład drużyny opracowany przez BioWare jest po prostu losowo generowany.
+                Wszystkie zainstalowane modyfikacje są ignorowane. Jeśli chcesz po prostu losowo wybrać standardowych towarzyszy, ale nadal chcesz
+                uwzględnić wszystkich swoich zmodyfikowanych towarzyszy, powinieneś wybrać ten tryb.
+			</p>
+			<p>
+				<Strong>Tryb 2 – Zaawansowany losowy dobór postaci:</Strong> Tym, co wyróżnia ten mod,
+                jest jednak tak zwany „Zaawansowany dobór postaci”! Jest to w zasadzie główna atrakcja, dla której mod został pierwotnie stworzony.
+                Obowiązują te same zasady, co w przypadku „Podstawowego doboru postaci”, ale teraz prawie wszyscy towarzysze, których gracz wcześniej zainstalował, są
+                uwzględnieni w losowaniu. To, ilu i którzy z nich się pojawią, zależy zarówno od przypadku, jak i od z góry ustalonego rankingu opartego na złożonym
+                systemie rankingowym, który zaprojektowałem, uwzględniając rzadkość, rasę, klasę, moc oraz obecność w fabule. Można to jednak podsumować
+                w ten sposób: im bardziej nudny (mniej wątków fabularnych/zadań/romansów/rozmów), im bardziej nikczemny i im słabszy jest towarzysz
+				— i im bardziej jest on lub ona ludzki — tym większe jest prawdopodobieństwo, że pojawi się na Wybrzeżu Miecza.
+                Zatem prawdopodobieństwo spotkania Indiry (jeśli jest dostępna) jest większe niż spotkania Aydena lub
+                Bristlelicka. Naprawdę trafiłeś w dziesiątkę, jeśli zainstalowałeś pakiet NPC Glam, a następnie rzuciłeś kostką również w tej sprawie.
+				
+				Im więcej modów postaci niezależnych masz zainstalowanych, tym gra staje się ciekawsza. Prawdopodobieństwo wygenerowania łotra, pirata lub wędrowca
+                jest wyższe niż np. potężnego czarnoksiężnika lub Sandry (nie uwzględniono). Jednak średnia maksymalna liczba
+                towarzyszy pozostaje taka sama, więc posiadanie większej liczby modów towarzyszy nie oznacza automatycznie, że wygenerujesz
+                więcej towarzyszy. W rzeczywistości im więcej modów towarzyszy masz zainstalowanych, tym mniejsze jest prawdopodobieństwo wygenerowania postaci NPC firmy BioWare.
+                Jeśli więc chcesz uzyskać maksymalną różnorodność podczas rozgrywki, powinieneś wybrać ten tryb i zainstalować wcześniej jak najwięcej modów towarzyszy
+                . Jednak ze względu na wymagania zasad potrzebujesz CO NAJMNIEJ 3 modów towarzyszy, aby grać w tym trybie.
+				W późniejszych wersjach modyfikacji liczba ta może ulec zmianie w zależności od opinii społeczności.
+			</p>
+			 <p>			
+				<Strong>Tryb 3 — Usuwanie postaci z obsady podstawowej:</Strong> To narzędzie nie jest już częścią samego randomizatora, lecz służy
+                osobom, które chcą spróbować przejść grę wyłącznie z postaciami zmodyfikowanymi przez siebie, bez postaci niezależnych BioWare. W tym trybie wszystkie postacie niezależne BioWare
+                są usuwane z obsady podstawowej, dzięki czemu – poza obsadą główną – spotkasz wyłącznie swoich zmodyfikowanych towarzyszy.
+            </p>
+			<hr>
+			<p>			
+				<i><b>Opcjonalnie:</b></i> W kolejnej wersji można by wprowadzić czwartą opcję, która losowo zmieniałaby tylko postacie NPC typu „Mod”, pozostawiając
+                postacie typu „Basic Cast” bez zmian.
+            </p>
+          </section>
+          <section id="Installationsanweisung">
+            <h2>Jak zainstalować ten mod?</h2>
+            <p><b> Obsługiwane wersje</b></p>
+            <p> Baldur’s Gate 1 EE    : w zestawie</p>
+            <p><i> Baldur’s Gate 1 EET   : jeszcze nieobsługiwane</i></p>
+			<p><i> Baldur's Gate 2 EE    : jeszcze nieobsługiwane</i></p>
+            <p><i> Baldur's Gate 2 EET   : jeszcze nieobsługiwane</i></p>
+            <p> ----------------------------------------- - </p>
+            <p><i> Baldur's Gate 1       : nie planujemy wsparcia!</i></p>
+            <p><i> Baldur's Gate 2       : nie planujemy wsparcia!</i></p>
+            <p><i> Baldur's Gate 1 BGT   : nie planujemy wsparcia!</i></p>
+			<p><i> Baldur's Gate 1 Tutu  : nie planuje się obsługi!</i></p>
+            <p><i> Baldur's Gate IWD-EET : nie planuje się obsługi!</i></p>
+            <p>Mod jest obecnie przeznaczony wyłącznie dla Baldur's Gate EE na systemach Windows i Linux! Pojawi się również wersja dla Baldur's Gate 2.
+			Pojawi się wersja dla Baldur's Gate 2, albo jako rozszerzenie tego narzędzia, albo jako samodzielna aplikacja, albo zintegrowana
+            z dużym, specjalistycznym narzędziem, które planuję – ale być może nigdy nie zrealizuję.</p>
+            <p>
+              1) Mod działa jak zwykły mod WEIDU, choć jest to wersja niestandardowa.
+			  Wystarczy umieścić folder „Randomizer” wraz z plikiem „Randomizer.exe” w katalogu
+              „Baldur's Gate” (myPath...\Baldur's Gate Enhanced Edition)
+              i uruchomić aplikację Randomizer. Nie można używać żadnej innej wersji WEIDU poza
+              edycją RainerZufall. Mod nie będzie działał.
+            </p>
+
+            <p>
+			  2) W tej chwili nie jest to konieczne, ale zaleca się zainstalowanie narzędzia do scalania DLC „Argent”. W przyszłych wersjach może to
+                 stać się warunkiem koniecznym do uruchomienia modyfikacji.
+				 Menu startowe zawiera 3 pozycje. <strong>Wybierz TYLKO jedną</strong> i zainstaluj ją
+                 tylko raz! Jest to bardzo wczesna wersja modyfikacji. Nie powtarzaj procesu instalacji,
+                 zwłaszcza w przypadku drugiej pozycji (rozszerzona obsada), aby uniknąć jakichkolwiek problemów lub błędów! Jeśli chcesz ponownie usunąć
+                 „Randomizer”, zapoznaj się z wątkiem dotyczącym deinstalacji!
+            </p>
+			 <p>
+			     <p><strong>Menu opcji:</strong></p>
+                 <p>1] Uruchom Basic_Cast Randomizer =</p>
+                   Wpisz „1” i naciśnij klawisz Enter, aby zainstalować moduł 1 i jednocześnie uruchomić program losujący.
+                   Podczas działania programu losującego (=instalacji) pojawi się prośba o potwierdzenie polecenia poprzez naciśnięcie klawisza Enter.
+				   Naciśnij klawisz ENTER i pozwól programowi działać. Może to chwilę potrwać, w zależności od tego, ile modów towarzyszących zostało zainstalowanych i
+                   ile z nich zostanie usuniętych. Teraz instalator zainstaluje wszystko automatycznie. Nie powinno wystąpić żadnych błędów.
+				   Jeśli pojawi się błąd, na przykład  ponieważ zapomniałeś zainstalować SoD-DLC-Merger, może się zdarzyć, że pojawi się Yeslic.
+                   Podczas instalacji nie otrzymasz żadnej informacji zwrotnej o tym, kto został wybrany, a kto nie, ani o podobnych kwestiach.
+				   Wybierz tę opcję, jeśli chcesz wymieszać TYLKO podstawową obsadę. Pamiętaj, że mod oferuje tylko wybór
+                   towarzyszy, zazwyczaj od 8 do 13 osób. Nie możesz spotkać wszystkich w swojej rozgrywce!
+                   Taka jest podstawowa idea tego modu! To, kogo spotkasz podczas swojej podróży, zależy teraz od przypadku.
+
+                  <p>2] Uruchom Advanced_Cast Randomizer =</p>
+                   Wpisz „2” i naciśnij klawisz Enter, aby przeprowadzić instalację (z modułem 2) i jednocześnie uruchomić generator losowy.
+                   Podczas działania generatora losowego (=instalacji) pojawi się prośba o potwierdzenie polecenia poprzez naciśnięcie klawisza Enter.
+                   Naciśnij Enter i pozwól programowi działać. Może to chwilę potrwać, w zależności od tego, ile modów towarzyszących zostało zainstalowanych i
+                   ile z nich zostanie usuniętych. Teraz instalator zainstaluje wszystko automatycznie. Nie powinno wystąpić żadnych błędów.
+                   Jeśli pojawi się błąd, na przykład dlatego, że zapomniałeś zainstalować SoD-DLC-Merger, może się zdarzyć, że pojawi się komunikat o obecności Yeslic.
+                   Podczas instalacji nie otrzymasz żadnej informacji zwrotnej o tym, które modyfikacje zostały wybrane, a które nie, ani o podobnych kwestiach. Wybierz tę opcję,
+                   jeśli zainstalowałeś co najmniej 3 modyfikacje towarzyszące. Najlepiej jednak, abyś miał zainstalowanych co najmniej 5–10+.
+                  <b>WAŻNA UWAGA:</b> 
+				   Ponieważ autor tego modu do gry „Baldur’s Gate 1 – ToB” (który zagrał w nią tylko raz w życiu) nigdy nie grał w
+                   trzecią część serii i nie chciał żadnych spoilerów, opracowano specjalny mechanizm <u> służący do TRWAŁEGO usunięcia
+				   niewybranych towarzyszy z instalacji WEIDU</u> bez konieczności modyfikowania skryptów poszczególnych autorów modów
+                  . Jest to niezbędne do prawidłowego działania! Przyszłe wersje tego modu mogą jednak w pewnych okolicznościach działać na standardowej wersji WEIDU,
+                  gdzie można przywrócić usuniętych towarzyszy. Jeśli chcesz usunąć randomizer
+                   później, możesz to zrobić bez wahania; jednak usunięci towarzysze nie zostaną przywróceni (zobacz sekcję „Odinstalowanie”).
+                  <p>3] Uruchom Base_Cast_Remover_Tool =</p>
+                   Wpisz „3” i naciśnij „Enter”, aby zainstalować (z modułem 3) i jednocześnie uruchomić Randomizer.
+				   Aby rozpocząć instalację, musisz mieć zainstalowanych co najmniej 6 modów towarzyszy. Następnie instalator zainstaluje
+                   wszystko automatycznie. Nie powinno wystąpić żadnych błędów. Jeśli pojawi się błąd
+                   spowodowany tym, że zapomniałeś zainstalować narzędzie do scalania DLC SoD, może się zdarzyć, że Yeslic nadal będzie obecny.
+			       Po instalacji wszyscy towarzysze BioWare z modułu Basic_Cast powinni zostać usunięci.
+                   Wybierz tę opcję, jeśli chcesz jedynie wypróbować rozgrywkę ze zmodyfikowanymi towarzyszami (głównie -> zobacz Zasady modyfikacji)
+            </p>
+          </section>
+		  <section id="Uninstall">
+            <h2>Jak odinstalować ten mod?</h2>
+            <p>
+				Aby odinstalować ten mod, najpierw uruchom aplikację Randomizer, wpisz „u” w konsoli i potwierdź, naciskając klawisz „Enter”.
+                Mod zostanie wówczas usunięty, a oryginalne postacie NPC zostaną przywrócone. Nie powinno wystąpić żadnych błędów, pod warunkiem, że
+                Randomizer został zainstalowany jako ostatni mod.
+
+				<p>UWAGA!</p>
+
+                Jeśli jednak zainstalowałeś Randomizer wraz z Modułem 2, wszystkie mody postaci niezależnych, które nie zostały losowo wybrane przez Randomizer,
+                zostały odinstalowane. Jeśli teraz odinstalujesz Randomizer, nawet wszelkie ślady tych modów postaci niezależnych zostaną całkowicie usunięte z
+                pamięci gry, więc późniejsza ponowna instalacja powinna być możliwa bez żadnych problemów. ALE: Następnie musisz
+                ponownie zainstalować wszystkie mody towarzyszące, które koniecznie chcesz mieć w grze (tj. uruchomić każdy instalator modu z osobna
+                i ponownie zainstalować mod towarzyszący tak, jakbyś nigdy wcześniej go nie uruchamiał).
+                Nie dotyczy to modów, które zostały zainstalowane po Randomizerze (zobacz naruszenie zasad).
+			</p>			
+          </section>
+		  <section id="Kompatiblität">
+            <h2>Zgodność</h2>
+            <p>
+                <p>Obecnie Randomizer działa wyłącznie na następujących systemach:
+                <ul>
+                    <li>Microsoft Windows</li>
+                    <li>Linux</li>
+					<li>macOS (M1+ – tylko Rosetta)</li>
+                </ul>
+                </p>
+                W tej sekcji omówiono zgodność Randomizer z innymi modami. Lista ta może ulec zmianie wraz z przyszłymi aktualizacjami wersji!
+
+                <p><h3>Niezgodne: </h3></p>
+				<ul>
+                <li><b>Najemnicy Wybrzeża Miecza:</b> Niestety, ten mod opiera się na zasadniczo odmiennym podejściu pod względem treści, polegającym na rekrutacji najemników w newralgicznych punktach.</li>
+                </ul>
+                <p><h3>Ograniczona kompatybilność: </h3></p>
+                <ul>
+                <li>Mody towarzyszące, takie jak „Xan’s New Groove”, które zmieniają istniejące przedmioty towarzyszy, mogą zakłócać działanie tego narzędzia.</li>
+                <li>Modyfikacje, które w znacznym stopniu przepisują dialogi istniejących postaci, mogą wywołać nieprzewidziane skutki, jeśli zostaną zainstalowane później.</li>
+				<li>Mod EE_content_tweaks autorstwa Pecca nie został tutaj rozszerzony, a jedynie sprawdzony; w związku z tym niektóre postacie niezależne Beamdog mogą
+                    ponownie pojawić się w innych miejscach w SoD.</li>
+                <li>Niektóre udostępnione modyfikacje zawierają poważne błędy lub zostały zaprojektowane dla starszej wersji, np. Baldur’s Gate 1.
+				    O ile wiadomo, te spośród nich, które działają, zostały uwzględnione, ale są przypisywane tylko w rzadkich przypadkach.</li>
+                <li>Mody towarzyszące, które nie zostały uwzględnione w tej puli, nie są objęte podstawową funkcjonalnością Randomizer. W wersji 0.1 uwzględniono:
+                    <details>
+                    <summary>Spoiler</summary>
+                        <p><i>Alarin, Amros, Areen, Arakan, Askaria, Aura, Ayden, Breager, Brandock, Bristlelick, Desiree, Drake, Drizzt, Ellyrian, Emily, Finch,
+							  Gavin, Galileo, Glam NPC Pack, Grey the Dog, Haiass, Helarine, Helga, Husam, Indira, Ishlilka, Isra, Kale, Korax, Kvel, Margarita,
+							  Morgul, Mother Lost, Mur’neth, Ophysia, Petsy, Recorder, Shuk, Sirene, Tenya Thermidor, Tamoko, Uzil, Valerie, Verrsza, Vienxay,
+                              Vicril, Walahnan, White, Zakrion</i></p>
+                    </details>
+                </li>
+                </ul>
+			</p>			
+          </section>
+		  <section id="Modregeln">
+            <h2>Jak odinstalować ten mod?</h2>
+            <p>
+				Aby odinstalować ten mod, najpierw uruchom aplikację Randomizer, wpisz „u” w konsoli i potwierdź, naciskając klawisz „Enter”.
+                Mod zostanie wówczas usunięty, a oryginalne postacie NPC zostaną przywrócone. Nie powinno wystąpić żadnych błędów, pod warunkiem, że
+                Randomizer został zainstalowany jako ostatni mod.
+
+				<p>UWAGA!</p>
+
+                Jeśli jednak zainstalowałeś Randomizer wraz z Modułem 2, wszystkie mody postaci niezależnych, które nie zostały losowo wybrane przez Randomizer,
+                zostały odinstalowane. Jeśli teraz odinstalujesz Randomizer, nawet wszelkie ślady tych modów postaci niezależnych zostaną całkowicie usunięte z
+                pamięci gry, więc późniejsza ponowna instalacja powinna być możliwa bez żadnych problemów. ALE: Następnie musisz
+                ponownie zainstalować wszystkie mody towarzyszące, które koniecznie chcesz mieć w grze (tj. uruchomić każdy instalator modu z osobna
+                i ponownie zainstalować mod towarzyszący tak, jakbyś nigdy wcześniej go nie uruchamiał).
+                Nie dotyczy to modów, które zostały zainstalowane po Randomizerze (zobacz naruszenie zasad).
+							
+		 <p><b> Grupa 2 – CoreCast:</b> Każdy, kto uważnie przeczytał plik README, natknął się na termin
+                „CoreCast”. Grupa ta charakteryzuje się znaczącą rolą w fabule głównej lub pobocznej, jest widoczna
+                i obecna narracyjnie w świecie gry lub – podobnie jak Grupa 1 – pełni funkcję kotwicy fabularnej (SoD). Grupa ta
+                pod każdym względem dorównuje niemal grupie 1.
+                Również ona (prawie) NIGDY nie zostanie uwzględniona w tym generatorze losowym. Różnica w stosunku do grupy 1 polega raczej na
+                różnym stopniu znaczenia wspomnianych aspektów, co znajduje odzwierciedlenie w hierarchii wewnątrz
+                tej grupy. Grupa ta obejmuje:</p>
+
+            <p>	1. Skie Silvershield + brat (Grupa 3 — SoD i Del’Vortel: „Cost of One Girl’s Soul”) + Eldoth (przeniesiony potajemnie z Grupy 3 do Grupy 2)</p>
+            <p>	1. Kapitan/major Shael Corwin („SoD” i „Miłość pokonuje wszystko”), a także
+                   Lady Shining/Caelar Argent („SoD” i „Miłość pokonuje wszystko” — technicznie rzecz biorąc należą do Grupy 1, ale z punktu widzenia generatora losowego
+                   są dopuszczalne w Grupie 2 ze względu na samą grywalność)</p>
+            <p>	1. Jaheira (BG1, 2, 3) i Khalid są, ze względu na ich relacje z Gorionem i wiele innych
+                   punktów odniesienia w głównej fabule, najważniejszymi przedstawicielami grupy 2 wraz z innymi parami.</p>
+            <p> 1. Yoshimo (BGII)</p>
+				
+			<p> 2. Tylko w trybie SoD: Neera (w pozostałych przypadkach – grupa 3)</p>
+            <p> 2. Tylko w trybie SoD: Baeloth i M'Khin (w pozostałych przypadkach – grupa 3)</p>
+            <p> 2. Sarevok (BGII): Z dowolnego modu Sarevoka</p>
+            <p>	2. Bodhi (BGII): z dowolnego modu Bodhi</p>
+            <p>	2. JonlethI (BGII): z dowolnego modu Irenicusa</p>
+            <p> 2. Trio MDE (zostało eksperymentalnie umieszczone w grupie 3 w wersji Randomizera v0.1.0 -> naruszenie własnych zasad, ponieważ Minsc wymaga modu usuwającego w BG3)</p>
+            <p>	2. Viconia (została eksperymentalnie umieszczona w grupie 3 podczas działania Randomizera w wersji v0.1.0 -> naruszenie własnych zasad, ponieważ, o ile mi wiadomo, potrzebuje OGROMNEGO modu odzwierciedlającego ten stan w BG3)</p>
+
+            <p>	3. Kapitan Brage (mod Jasteya: „Brage's Redemption”) — mimo że nigdy nie grałem w ten mod, postać ta odgrywała tak ważną rolę w fabule, że uznałem go za członka obsady BioWare, którego przeoczyłem.</p>
+            <p> 3. Mod Solaufein (Argent77)</p>
+            <p>	3. Mod Kelsey (jcompton i Ghreyfain)</p>
+            <p> 3. BGII Grupa 1 (Cernd, Valygar, Nalia, HaerDaelis – tylko eksperymentalnie)</p>
+
+            <p> 4. BGII Grupa 2 (Anomen, Keldorn, Mazzy, Jan)</p>
+            <p>	4. Kagain – pierwszy z mieszkańców</p>
+            <p> 4. Hexxat (tajna postać z BG2) jest drugim „mieszkańcem”</p>
+            <p> 5. Branwen (swego rodzaju „mieszkaniec 0,5”) została już „nieoficjalnie” zaimplementowana do grupy 3 podczas tworzenia programu Randomizer w wersji 0.1.0</p> 
+				
+			<p> Wszyscy gracze poniżej rangi 3 z Grupy drugiej będą mogli dołączyć do Grupy trzeciej w kolejnych aktualizacjach modyfikacji „Randomizer”, jeśli pojawi się taka prośba!
+                Naruszenia zasad popełnione przeze mnie mogą zostać naprawione albo w grze BG3 (po tym, jak w nią zagram), albo w późniejszej aktualizacji modyfikacji „Randomizer”.</p></br>
+
+		 <p><b> Grupa 3 – Grupa Randomizera:</b> Grupa Randomizera składa się obecnie z dwóch podgrup, a w przyszłości będzie składać się z trzech<ul>
+                <li>1) BasicCast: Znajdują się tu wszyscy towarzysze BioWare (którzy nie należą jeszcze do grupy 1 lub 2)</li>
+				<li>2) AdvancedCast: Znajdują się tu wszyscy towarzysze z BioWare (którzy nie należą jeszcze do grupy 1 lub 2) oraz wszyscy towarzysze z modów</li>
+                <li>3) ImprovedCast: (obecnie nie uwzględniona) – Znajdują się tu wyłącznie towarzysze z modów</li></ul></p></br>
+				
+		 <p><b> Grupa 4 – Grupa „Blanky”</b> (obecnie nie uwzględniona – tylko w AdvancedCast)
+                Planowane jest utworzenie czwartej grupy tzw. postaci „blank”, stworzonych przeze mnie.
+				Są to szczególnie słabi lub irytujący najemnicy lub mieszkańcy wsi, którzy nie mogą stać się silniejsi
+                niż poziom 6 (także w Baldur’s Gate 2)
+                Będą oni wypełniać puste miejsca, jeśli gracz nie zainstaluje wystarczającej liczby modów towarzyszy dla
+                modułu 2 AdvancedCast. Szansa na ich pojawienie się będzie niewielka (50%)</p>
+			<hr>
+				<p><strong>Naruszenie zasad:</strong></p>
+                Zawsze znajdą się oszuści, którzy chcą naginać zasady gry.
+                Dzięki temu modowi jest to oczywiście możliwe – wystarczy po zainstalowaniu tego modu zainstalować jeszcze jeden
+                mod towarzyszący. Taki towarzysz będzie wtedy oczywiście zawsze
+                się pojawiał. To samo dotyczy towarzyszy, którzy z jakiegokolwiek powodu
+                nie zostali uwzględnieni w tym modzie. Takie postępowanie zmniejsza przyjemność z gry, ponieważ
+                obchodzi losowość i pozbawia sensu cel tego modu.
+                Proszę tego nie robić! Zawsze instalujcie ten mod jako ostatni!
+				Korzystanie z narzędzia A7-NPCGenerator autorstwa Argent77 również stanowi naruszenie zasad, ponieważ
+                towarzysze stworzeni za pomocą tego generatora nie mogą oczywiście zostać wybrani przez
+                generator losowy. Jeśli nadal chcesz korzystać z tego narzędzia, prosimy o tworzenie nie więcej niż
+                jednego niestandardowego NPC, aby nie zepsuć przyjemności z gry.	
+			</p>			
+          </section>		  
+          <section id="Empfehlungen">
+            <h2>Linki i pliki do pobrania</h2>
+            <p>
+                Jeśli masz jakieś pytania lub sugestie, skontaktuj się z nami na Beamdog lub na forum Zamek Świec.
+                Zapraszamy również innych twórców modów do kontaktu ze mną pod podanym adresem e-mail.
+            </p>
+
+            <ul>
+              <li><a href="https://github.com/EIEIEI1903">Link do repozytorium na GitHubie</a></li>
+			  <li><a href="https://forums.beamdog.com/discussion/90845/mod-randomizer">Link do forum Beamdog</a></li>
+              <li><a href="https://www.baldurs-gate.de/index.php?threads/randomizer.46363/">Link do forum Zamek Świec</a></li>
+              <li><a href="changelog.txt">Lista zmian</a></li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
+
+    <footer>
+	  <p>
+        · 2026 - EIEIEI1903 ·
+      </p>
+      <p>
+         This is a Fan Project. All rights belong to the following companies: 
+      </p>
+	  <p>
+         ©WizzardsoftheCoast ©BioWare(Division of EA) ©Interplay ©Beamdog (SoD) ©Larian Studios (BG3 Content)
+      </p>
+
+      <p>
+        <a href="#start">Do góry ↑</a>
+        ·
+        <a href="mailto:modfredavitor1@atomicmail.io">Napisz e-mail</a>
+      </p>
+    </footer>
+  </div>
+</body>
+</html>

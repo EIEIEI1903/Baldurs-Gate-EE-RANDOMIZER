@@ -1,0 +1,170 @@
+DEFINE_ACTION_FUNCTION basicCast
+// ------------------------------------------
+// Funktionskopf
+// ------------------------------------------    
+	INT_VAR
+	MaxCount 			= 1
+    BegleiterWuerfel 	= 1
+	num 	    		= 1
+// ------------------------------------------					
+	BEGIN
+		INCLUDE ~Randomizer/lib/functions.tpa~
+		INCLUDE ~Randomizer/lib/D6no7.tpa~
+// ------------------------------------------
+		ACTION_DEFINE_ARRAY personenteilnahmeregisterA38 BEGIN 
+		~Ajantis~
+		~Alora~
+		~Baeloth~
+		~Branwen~
+		~Coran~
+		~DornIlKhan~
+		~Faldorn~
+		~Garrick~
+		~Kivan~
+		~Minsc-Dynaheir-Edwin~
+		~Neera~
+		~Quayle~
+		~Rasaad~
+		~Safana~
+		~Shar-Teel~
+		~Tiax~
+		~Viconia~
+		~Xan~
+		~Xar-Montaron~
+		~Yeslick~
+		END
+		
+		LAF D6Komma9x
+			RET BegleiterWuerfel = D6Komma9xResult
+		END
+//--------------------------------------------------------------------------------
+//				Würfelfeedback
+//--------------------------------------------------------------------------------
+		ACTION_IF (BegleiterWuerfel <= 9) BEGIN
+			PRINT @501
+		END ELSE BEGIN
+					ACTION_IF (BegleiterWuerfel == 10) BEGIN
+						PRINT @502
+					END ELSE BEGIN
+								ACTION_IF (BegleiterWuerfel == 11) BEGIN
+									PRINT @503
+								END ELSE BEGIN
+										 	ACTION_IF (BegleiterWuerfel == 12) BEGIN
+												PRINT @504
+											END ELSE BEGIN
+													 	ACTION_IF (BegleiterWuerfel == 13) BEGIN
+															PRINT @505
+														END ELSE BEGIN
+																	ACTION_IF (BegleiterWuerfel == 14) BEGIN
+																		PRINT @506
+																	END ELSE BEGIN
+																				ACTION_IF (BegleiterWuerfel >= 15) BEGIN
+																					PRINT @507
+																				END 
+																			 END
+																 END
+													 END
+										 END
+							 END
+				 END
+
+		ACTION_READLN ~scanfENTER~
+		SILENT
+//--------------------------------------------------------------------------------			
+		OUTER_FOR (; num < BegleiterWuerfel; ++num) BEGIN
+
+			RANDOM_SEED ~NEUER_SEED~
+        	OUTER_SET var_zwischen = RANDOM (1 20)
+			OUTER_SET bb=0
+			OUTER_FOR (aa=1; aa <= 20; ++aa) BEGIN
+				ACTION_IF var_zwischen = aa THEN BEGIN
+					OUTER_SPRINT $ EVAL personenteilnahmeregisterA38(~%bb%~) ~DABEI~
+				END
+				OUTER_SET ++bb
+			END
+		END
+//--------------------------------------------------------------------------------
+//				Auswertung
+//--------------------------------------------------------------------------------
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(0)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Ajantis~ 						BEGIN
+		LAF DELETE_Ajantis END
+		END	
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(1)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Alora~ 						BEGIN
+		LAF DELETE_Alora END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(2)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Baeloth~ 						BEGIN
+		LAF DELETE_BEAM_Baeloth_Barrityl END 
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(3)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Branwen~ 						BEGIN
+		LAF DELETE_UPD_Branwen END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(4)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Coran~ 						BEGIN
+		LAF DELETE_Coran END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(5)
+		ACTION_IF ~%var_namest%~ STR_EQ ~DornIlKhan~ 					BEGIN
+		LAF DELETE_BEAM_Dorn END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(6)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Faldorn~ 						BEGIN
+		LAF DELETE_Faldorn END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(7)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Garrick~ 						BEGIN
+		LAF DELETE_Garrick END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(8)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Kivan~ 						BEGIN
+		LAF DELETE_Kivan END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(9)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Minsc-Dynaheir-Edwin~ 			BEGIN
+			LAF DELETE_Minsc-Dynaheir-Edwin END			
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(10)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Neera~ 						BEGIN
+		LAF DELETE_BEAM_Neera END	
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(11)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Quayle~ 						BEGIN
+			LAF DELETE_Quayle END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(12)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Rasaad~ 						BEGIN
+			LAF DELETE_BEAM_Rasaadyn END	
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(13)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Safana~ 						BEGIN
+		LAF DELETE_Safana END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(14)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Shar-Teel~ 					BEGIN
+		LAF DELETE_Shar-Teel_Dos END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(15)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Tiax~ 							BEGIN
+			LAF DELETE_Tiax END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(16)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Viconia~ 						BEGIN
+		LAF DELETE_Viconia END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(17)	
+		ACTION_IF ~%var_namest%~ STR_EQ ~Xan~ 							BEGIN
+			LAF DELETE_Xan END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(18)	
+		ACTION_IF ~%var_namest%~ STR_EQ ~Xar-Montaron~ 					BEGIN
+			LAF DELETE_Xar-Montaron END
+		END
+		OUTER_SPRINT var_namest $personenteilnahmeregisterA38(19)
+		ACTION_IF ~%var_namest%~ STR_EQ ~Yeslick~ 						BEGIN
+		LAF DELETE_Yeslick END
+		END
+
+	END

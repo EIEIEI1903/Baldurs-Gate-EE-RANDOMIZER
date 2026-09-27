@@ -1,0 +1,94 @@
+DEFINE_PATCH_FUNCTION xan_never_happend
+
+BEGIN
+
+// 		Kistenlösche Xan - Der Typ hat ihm doch 100 pro alle Rollen abgenommen
+
+			FOR (pass = 0; pass < 100; ++pass) BEGIN
+
+				SET found_item = 0
+				SET delete_index = 0
+
+				GET_OFFSET_ARRAY containers ARE_V10_CONTAINERS
+
+				PHP_EACH containers AS container_index => container_offset BEGIN
+
+					PATCH_IF container_index == 0 BEGIN
+
+						GET_OFFSET_ARRAY2 container_items container_offset ARE_V10_ITEMS
+
+						PHP_EACH container_items AS item_index => item_offset BEGIN
+
+							READ_ASCII item_offset item_resref (6)
+
+							PATCH_IF ~%item_resref%~ STRING_EQUAL_CASE ~SCRL99~ BEGIN
+
+								SET found_item = 1
+								SET delete_index = item_index
+
+							END
+
+
+							PATCH_IF ~%item_resref%~ STRING_EQUAL_CASE ~SCRL81~ BEGIN
+
+								SET found_item = 1
+								SET delete_index = item_index
+
+							END
+
+
+							PATCH_IF ~%item_resref%~ STRING_EQUAL_CASE ~SCRL69~ BEGIN
+
+								SET found_item = 1
+								SET delete_index = item_index
+
+							END
+
+
+							PATCH_IF ~%item_resref%~ STRING_EQUAL_CASE ~SCRL76~ BEGIN
+
+								SET found_item = 1
+								SET delete_index = item_index
+
+							END
+
+
+							PATCH_IF ~%item_resref%~ STRING_EQUAL_CASE ~SCRL67~ BEGIN
+
+								SET found_item = 1
+								SET delete_index = item_index
+
+							END
+
+
+							PATCH_IF ~%item_resref%~ STRING_EQUAL_CASE ~POTN08~ BEGIN
+
+								SET found_item = 1
+								SET delete_index = item_index
+
+							END
+
+						END
+
+					END
+
+				END
+
+				PATCH_IF found_item == 1 BEGIN
+
+					LPF fj_are_structure
+						INT_VAR
+							fj_delete_mode = delete_index
+						STR_VAR
+							fj_structure_type = ~itm~
+					END
+
+
+				END ELSE BEGIN
+
+					SET pass = 100
+
+				END
+			END
+
+END
