@@ -3,7 +3,20 @@ Baldurs Gate EE- Randomizer Mod Version 0.1.0
 
 # Changelog
 
-## [0.1.0] - 2026-09-20
+## [0.1.0] hotfix - 2026-09-27 
 
 ### Added
-- Release of the first Version (0.1.0) of Bartman Muggletree Randomizer Mod 
+
+Changed
+
+- Updated the README hyperlinks to the main discussion forum on Beamdog and to the repository on github
+
+- Replaced the "placeholder name" by the correct mod name, EIEIEI1903 in the changelog on 
+
+- Replaced the estimated release date in the changelog by the real release date
+
+## [0.1.0] - 2026-09-27 
+
+### Added
+
+- Release of the first Version (0.1.0) of EIEIEI1903 Randomizer Mod
