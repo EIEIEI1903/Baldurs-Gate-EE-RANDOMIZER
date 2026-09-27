@@ -1,4 +1,4 @@
-## Randomizer
+### Randomizer
 
 Randomizer is an unofficial fan-made modification for Baldur's Gate that creates a different companion setup for each playthrough.
 
