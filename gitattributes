@@ -17,6 +17,7 @@
 *.tra text
 *.txt text
 
+*.rar binary
 *.7z binary
 *.acm binary
 *.are binary
