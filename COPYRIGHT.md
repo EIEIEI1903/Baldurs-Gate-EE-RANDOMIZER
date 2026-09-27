@@ -34,7 +34,7 @@ developed, published, sponsored, or endorsed by Wizards of the
 Coast, Electronic Arts, BioWare, Interplay Entertainment, or
 their respective affiliates.
 
-##Wizards of the Coast
+## Wizards of the Coast
 
 Where Randomizer incorporates intellectual property covered by
 Wizards of the Coast's Fan Content Policy, such use is subject to
